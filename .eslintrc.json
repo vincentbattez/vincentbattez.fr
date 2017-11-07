@@ -9,7 +9,7 @@
         "compat" // compat = compatibilité browser
     ],
     "rules": {
-        "linebreak-style": ["error", "windows"], // fix windows bug
+        "linebreak-style": 0, // fix windows bug
         // "indent": ["error", "tab"], // indentation avec des tabulations
         // "quotes": ["error", "double"], // ''
         "no-console" :"off",
