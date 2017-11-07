@@ -1,0 +1,78 @@
+.navFollow{
+    position: absolute;  @include media(phone){&{display: none;}}
+    width: 110px;
+    top: 0; left: 0;
+    z-index: 98;
+    overflow: hidden;
+    @include transition(300ms width);
+    &.hide{
+        width: 40px;
+        button{right: 10px; padding: 0;}
+    }
+    nav{
+        height: auto;
+        button{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            .fa{
+                cursor: pointer;
+                font-size: 2rem;
+            }
+        }
+    }
+    a{
+        color: rgba(51,51,51,.7);
+        &:hover{
+            & > li{color: $color-primary;}
+            & > li:after{background: $color-primary;}
+        }
+    }
+    ul{padding-top: 30px;}
+    ul li{
+        @include transition(300ms all);
+        display: block;
+        padding: 0px 40px 0px 40px;
+        font-size: 1.6rem;
+        position: relative;
+        &:after{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: rgba(51,51,51,.7);
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            @include transition(300ms all);
+            @include translateY(-50%);
+        }
+    }
+    li.active{
+        color: $color-primary;
+        &:after{background: $color-primary;}
+    }
+    li.inactive{
+        color: #bdbdbd;
+        &:after{background: #bdbdbd;}
+    }
+}
+
+.projectWeb{
+    .column-2{
+        position: relative;
+        .tablet, .phone{position: absolute; bottom: 0; left: 0;}
+        .tablet{width: 32%;}
+        .pc{width: 100%; height: 100%; }
+        .phone{width: 16%;}
+    }
+}
+.projectDev-title-block{margin-bottom: 0px; margin-top: 70px;}
+.date{color: $color-primary; font-size: $font-size-regular;}
+.block{
+    display: block;
+    width: 1px;
+    padding: 0; margin: 0;
+    position: relative;
+}

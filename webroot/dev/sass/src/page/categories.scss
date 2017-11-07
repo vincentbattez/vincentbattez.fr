@@ -1,0 +1,145 @@
+/*______________________________-CATEGORY-______________________________*/
+.category{
+    .container{
+        padding-top: 6%;
+        small{
+            color: white;
+            font-size: $font-size-regular;
+        }
+        .display{
+            font-size: $font-size-xx-large;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        .stats-chiffre{
+            font-size: $font-size-xx-large; @include media(phone){&{font-size: $font-size-large-m;}}
+            color: white;
+            text-align: center;
+        }
+        .stats-txt{
+            font-size: $font-size-large; @include media(phone){&{font-size: $font-size-regular-m;}}
+            font-weight: $font-weight-light;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+.projects{
+    padding-bottom: 100px;
+    @include media(phone){&{padding-bottom: 20px}}
+
+    @media (max-width: 992px) {
+        .container{
+            width: auto;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+    .projects-row{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: start;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    }
+
+    .projects-container{
+        width: calc(100% / 3 - 20px);
+        // padding-right: 22px;
+        flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        -webkit-box-flex: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        @include media(phone){&{
+            width: calc(100% / 2 - 20px);
+        }}
+        @media (max-width: 665px) {
+            width: calc(100% - 20px);
+        }
+    }
+    .projects-title{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        @include media(phone){&{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            }
+        }
+    }
+    .article-developpeur .icon{min-width: inherit;}
+    .article-developpeur .image{right: 15%;}
+    .projects-article{
+        img{
+            height: 100%;
+            position: relative;
+            min-width: 100%;
+            &.icon{right: 50%!important;}
+        }
+        height: 265px;
+        position: relative;
+        overflow: hidden;
+        @include transition(300ms all);
+        @include box-shadow($shadow-1);
+        &:hover{
+            @include box-shadow($shadow-3);
+            @include scale(1.05);
+        }
+        .icon{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            @include transform(translateX(50%) translateY(-60%));
+            width: 100px;
+            z-index: 4;
+        }
+        .overlay{
+            z-index: 0;
+        }
+        .projects-article-title{
+            position: absolute;
+            bottom: 8%;
+            color: white;
+            z-index: 12;
+            font-size: $font-size-x-large;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            @include media(phone){&{
+                font-size: $font-size-x-large-m;
+            }}
+            @media (max-width: 992px) {
+                font-size: 3.4rem;
+            }
+        }
+        .date{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            font-weight: $font-weight-bold;
+            color: black;
+            z-index: 1;
+            font-size: 1.4rem;
+            background: #42e8a7;
+            padding: 4px 10px;
+        }
+    }
+}
+.projectDev {
+    .projectDev-content{
+        margin: -230px auto 30px auto;
+        @media only screen and (max-width: $pc){
+            &{
+                margin: -130px auto 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,204 @@
+/*______________________________-TEXTE-__________________________*/
+html {
+    font-family: $font-regular;
+    font-weight: $font-weight-regular;
+    font-size: 10px;
+    color: $text-black;
+}
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {width: .8rem;} // taille de la scrollbar
+body::-webkit-scrollbar-track {background: lighten($color-primary, 35%);} // fond de la scrollbar
+body::-webkit-scrollbar-thumb {background-color: $color-primary;} // tracker de la  scrollbar
+
+@include media(phone) {
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+h1{
+    font-size: $font-size-xx-large; @include media(phone){&{font-size:$font-size-xx-large-m;}}
+    font-weight: $font-weight-light;
+    text-align: center!important;
+}
+h2{
+    font-size: $font-size-x-large; @include media(phone){&{font-size:$font-size-x-large-m;}}
+    font-weight: $font-weight-regular;
+}
+h3{
+    font-size: $font-size-large; @include media(phone){&{font-size:$font-size-large-m!important;}}
+    font-weight: $font-weight-regular;
+}
+h4{
+    font-size: $font-size-large; @include media(phone){&{font-size:$font-size-large-m!important;}}
+    font-weight: $font-weight-regular;
+}
+p{
+    font-size: $font-size-regular; @include media(phone){&{font-size:$font-size-regular-m!important;}}
+    font-weight: $font-weight-light;
+    a{
+        font-size: $font-size-regular; @include media(phone){&{font-size:$font-size-regular-m!important;}}
+        font-weight: $font-weight-light;
+    }
+}
+abbr{
+    font-size: $font-size-regular; @include media(phone){&{font-size:$font-size-regular-m!important;}}
+    color: $color-primary;
+    cursor: help;
+}
+strong{
+    font-weight: $font-weight-regular;
+}
+.txtimg{
+    color: white;
+    font-size: $font-size-regular; @include media(phone){&{font-size:$font-size-regular-m!important;}}
+    font-weight: $font-weight-light;
+}
+a{
+    color: $color-link;
+    text-decoration: none;
+    @include transition(all 300ms ease-in-out);
+    &:hover{
+        color: $color-link-hover;
+        text-decoration: none;
+    }
+    &:active{color: $color-link-hover;}
+    &:focus{color: $color-link-hover;}
+}
+ul {
+    margin: 0; padding: 0;
+    li{display: inline-block;}
+}
+section{position: relative;}
+
+.display{
+  font-size: $font-size-xxx-large; @include media(phone){&{font-size:$font-size-xx-large-m!important;}}
+  font-weight: $font-weight-light;
+  text-align: center;
+  color:  #ffffff;
+  margin-top: 0;
+}
+.visible{opacity: 1;}
+.invisible{opacity: 0;}
+
+.mr20 { margin-right: 20px; }
+
+.txtcenter { text-align: center; }
+
+.message-important{
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    background: white;
+    width: 100%;
+    @include box-shadow($shadow-2);
+    @include media(phone){&{
+        position: absolute;
+        p, a{
+            font-size: 1.2rem!important;
+        }
+    }}
+    p {
+        margin: 5px 30px 5px 0;
+    }
+    .exit {
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10%;
+    }
+}
+
+input:disabled{
+    background: #c1c1c1!important;
+    cursor: not-allowed!important;
+}
+
+.puce{
+     & > li:before{
+        content: "";
+        display: inline-block;
+        width: 9px;
+        height: 10px;
+        border-radius: 100px;
+        background-color: #42e8a7;
+        margin-right: 10px;
+     }
+}
+.center-align-for-mobile{
+    @include media(phone){&{text-align: center;}}
+}
+
+.column-2 {
+    display: flex;
+    width: 100%;    
+    @include media(phone){
+        &{display: block}
+    }
+}
+
+/*______________________________-CONTACT-__________________________*/
+#modal-contact{
+    .left {
+        @include media(phone){&{margin-top: 45px;}}
+        h4{
+            font-size: 2rem;
+            color: #8e8c8c;
+            @include media(phone){&{display: none;}}
+        }
+    }
+    figure{
+        margin: 0;
+        width: auto;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .social i{
+        color: white;
+        font-size: 5rem;
+    }
+    .social{
+        @include box-shadow($shadow-1);
+        @include transition(300ms all);
+        &:hover{@include box-shadow($shadow-2);}
+    }
+    .fb{background: #3a589a;}
+    .fb:hover{background: lighten(#3a589a, 10);}
+
+    .linkedin{background: #0077B5;}
+    .linkedin:hover{background: lighten(#0077B5, 10);}
+
+    .flickr{background: #ff067e;}
+    .flickr:hover{background: lighten(#ff067e, 10);}
+}
+
+.separatorY{
+    height: 100%;
+    width: 1px;
+    border: none;
+    border-right: 1px solid #d7d7d7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    @include translateY(-50%);
+    @include media(phone){&{right: -30px;}}
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: -9999px;
+    opacity: 0;
+}
+.fluid-div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    & > .fluid-center{
+        width: 100%;
+    }
+}

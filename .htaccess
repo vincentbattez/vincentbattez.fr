@@ -1,13 +1,6 @@
-<IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c> 
+    Options +FollowSymLinks
     RewriteEngine on
-    RewriteBase /
-
-    # FORCE SSL REDIRECTION
-    RewriteCond %{ENV:HTTPS} !on [NC]
-    RewriteCond %{HTTP_HOST} !^local [NC]
-    RewriteCond %{HTTP_HOST} !^staging [NC]
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
-
-    RewriteRule ^$ webroot/ [L]
-    RewriteRule (.*) webroot/$1 [L]
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]
 </IfModule>
