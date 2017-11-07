@@ -1,0 +1,1 @@
+sql|s:80:"SELECT * FROM peinture WHERE orientation = "paysage" ORDER BY id DESC LIMIT 0,10";perPage|s:2:"10";

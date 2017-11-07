@@ -1,0 +1,18 @@
+h2 : #e74c3c
+   : 36 px
+barre entre les h2 : #1a1a1a
+
+h3 : #ffffff
+   : #303030
+   : 30px
+
+----CONTACT----
+label : #ffffff
+      : 18px
+ENVOYER : 36px
+
+----FOOTER----
+gros : 24px
+     : Myriad Pro
+
+petit : 14px

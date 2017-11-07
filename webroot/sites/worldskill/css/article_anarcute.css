@@ -1,0 +1,331 @@
+.w1024p{
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+@font-face { 
+    font-family: 'open_sanslight';
+    src: url('../font/opensans-light/opensans-light-webfont.eot');
+    src: url('../font/opensans-light/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-light/opensans-light-webfont.woff2') format('woff2'),
+         url('../font/opensans-light/opensans-light-webfont.woff') format('woff'),
+         url('../font/opensans-light/opensans-light-webfont.ttf') format('truetype'),
+         url('../font/opensans-light/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} /**********************************open_sanslight*/
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('../font/gotham-light/gotham-light-webfont.eot');
+    src: url('../font/gotham-light/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/gotham-light/gotham-light-webfont.woff2') format('woff2'),
+         url('../font/gotham-light/gotham-light-webfont.woff') format('woff'),
+         url('../font/gotham-light/gotham-light-webfont.ttf') format('truetype'),
+         url('../font/gotham-light/gotham-light-webfont.svg#gotham_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} /**********************************gotham_lightregular*/
+
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('../font/gotham-bold/gotham-bold-webfont.eot');
+    src: url('../font/gotham-bold/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/gotham-bold/gotham-bold-webfont.woff2') format('woff2'),
+         url('../font/gotham-bold/gotham-bold-webfont.woff') format('woff'),
+         url('../font/gotham-bold/gotham-bold-webfont.ttf') format('truetype'),
+         url('../font/gotham-bold/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} /**********************************gotham_boldregular*/
+p{
+    font-size: 14px;
+    font-family: 'open_sanslight';
+    color: #3f3e40;
+    line-height: 20px;
+    text-align: justify;
+}
+h1{
+    font-size: 30px;
+    font-family: 'gotham_boldregular';
+    color: #FFF;
+}
+h2{
+    font-size: 30px;
+    font-family: 'gotham_boldregular';
+    color: #3f3e40;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.separateur_h2{
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    border-bottom: 3px solid #ffd204;
+    margin-bottom: 55px;
+    margin-top: 10px;
+}
+h3{
+    font-size: 24px;
+    font-family: 'gotham_boldregular';
+    color: #3f3e40;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
+    font-family: 'gotham_boldregular';
+}
+a:visited{color:#FFF;}
+a:hover{color: #ffd204;}
+.txtbutton{
+    font-size: 14px;
+    font-family: 'gotham_boldregular';
+    color: #FFF;}
+section button{
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+.button{
+    width: 193px;
+    height: 27px;
+    background-color: #ffd204;
+    border: none;
+    color: #FFF;
+    border: 1px transparent #ffd204;
+    font-family: 'gotham_boldregular';
+    font-size: 14px;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+    
+}
+.button:hover{background-color: transparent; border: 1px solid #ffd204; color :#ffd204;}
+/***********************************************************************************NAV*/
+nav{background-color: #3f3e40; padding-bottom: 30px;}
+nav #accueil{color: #ffd204;}
+nav #nav {position: absolute; left: 0px;}
+nav ul{padding-top: 40px; position: relative;}
+nav ul li{ display: inline-block; margin-right: 20px;}
+nav ul li a{
+    color: #FFF; 
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+}
+nav ul li input{
+    width: 79px;
+    height: 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffd204;
+    color: #bcbcbc;
+    
+}
+nav ul #profil{position: relative;}
+nav ul img{
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+nav ul #notif{
+    width: 13px; 
+    height: 13px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #ffd204;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-family: 'gotham_boldregular';
+    font-size: 12px;
+    color: #626671;
+    
+}
+nav #deco{ 
+    font-family: 'gotham_lightregular';
+    font-size: 13px;
+    text-transform:none;
+    color:#ffd204;
+}
+nav #logo_serre {
+    width:215px; 
+    height:215px; 
+    margin-top: 70px;
+}
+/***********************************************************************************ARTICLE*/
+#article_entreprise .retour{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffd204;
+    border-radius: 100%;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    transform: rotate(-90deg);
+    transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+    margin-left: 10px;
+    
+}
+#article_entreprise .retour:hover:first-child{
+    text-decoration: none;
+    background-color: #ffd204;
+}
+#article_entreprise .retour:hover #retour{color: #FFF;}
+#article_entreprise #retour{
+    text-align: center;
+    font-style: normal;
+    font-size: 50px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    color: #ffd204;
+}
+#article_entreprise .w1024p{text-align:left; margin-top: 50px;}
+#article_entreprise p:first-letter{margin-left: 25px;}
+#article_entreprise h3{text-align:center;}
+#article_entreprise .article_img{
+    width:500px;
+    height:500px;
+    background-image: url(../img/actu/article_anarcute/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+#article_entreprise .opacity_jaune{
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    background-color: #ffd204;
+    opacity: 0;
+    position: relative;
+    transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+}
+#article_entreprise .article_img:hover > .opacity_jaune{opacity: 0.5;}
+#article_entreprise .loupe{
+    position: absolute;
+    bottom: 200px;
+    left: -80px;
+    width: 80px;
+    transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+}
+#article_entreprise .article_img:hover > .loupe{left: 220px;}
+#article_entreprise .content_article{
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#article_entreprise .logo_entreprise{
+    width: 115px;
+    height: 71px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+#article_entreprise a{
+    color: #d10b2f;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'open_sanslight';
+    font-size: 14px;
+}
+#article_entreprise a:hover{
+    text-decoration: underline;
+}
+#article_entreprise button{position: absolute; right: 0px; bottom:0px;}
+#article_entreprise .com{
+    border: 1px solid transparent;
+    text-align: right;
+    background-image: url(../img/actu/bulle_com.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 50px;
+    right: 200px; 
+    bottom:0px;
+}
+#article_entreprise .com:hover{
+    background-image: url(../img/actu/bulle_com-c.png);
+    border: 1px solid #ffd204;
+}
+#article_entreprise .partager{
+    border: 1px solid transparent;
+    width: 90px;
+    right: 0px; 
+    bottom:0px;
+}
+#article_entreprise .partager:hover{border: 1px solid #ffd204;}
+/***********************************************************************************COMMENAIRE*/
+#commentaire .w1024p{text-align:left; margin-top: 50px;}
+#commentaire .content_article{
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#commentaire textarea{
+    display: block; 
+    width: 100%;
+    height: 200px;
+    min-width:100%;
+    max-width:100%;
+    margin-top: 10px;
+    border: 1px solid #ffd204;
+}
+#commentaire #lire_com{border-top: 2px solid #ffd204; margin-top: 100px;}
+#commentaire .autre_com{margin-top: 20px;}
+/***********************************************************************************FOOTER*/
+footer{
+    margin-top: 150px;
+    background-color:#3f3e40;
+    position: relative;
+    height: 65px;
+}
+footer .w1024p{display:block; height: 100%; line-height: 65px;}
+footer p{color: #FFF;display: inline-block;}
+footer img {
+    position: absolute;
+    left: 0px;
+    top: -50px;
+}
+footer .button{
+    position: absolute; 
+    right: 0px; 
+    top: 20px;
+    border: #FFF 1px solid;
+    background-color: transparent;
+}
+footer button:hover{cursor: pointer;}
+
+
+
+

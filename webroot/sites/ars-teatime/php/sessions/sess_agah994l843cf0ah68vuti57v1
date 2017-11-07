@@ -1,0 +1,1 @@
+sql|s:66:"SELECT * FROM peinture WHERE prix >100 ORDER BY id DESC LIMIT 0,10";perPage|s:2:"10";

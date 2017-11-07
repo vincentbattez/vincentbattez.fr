@@ -2,10 +2,6 @@
 # Created by https://www.gitignore.io/api/sass,cakephp,git
 
 ### CakePHP ###
-# CakePHP 3
-
-/vendor/*
-/config/app.php
 
 /tmp/cache/models/*
 !/tmp/cache/models/empty
@@ -21,13 +17,6 @@
 /logs/*
 !/logs/empty
 
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
-
 ### Git ###
 *.orig
 
@@ -35,18 +24,11 @@
 .sass-cache/
 *.css.map
 
-# End of https://www.gitignore.io/api/sass,cakephp,git
-\.idea/
-
-
-### phpStorm ###
-/.idea
-
-/launch.bat
+### NPM ###
 /node_modules
-/webroot/sites/**
-webroot/builds/
 
+## DEV
+webroot/builds/
 
 ## PROD
 # .babelrc
@@ -69,3 +51,5 @@ webroot/builds/
 # /tests
 # /tmp
 # *.psd
+#/config/app.php
+/vendor/*

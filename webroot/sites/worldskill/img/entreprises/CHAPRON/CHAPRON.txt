@@ -1,0 +1,8 @@
+CHAPRON
+
+Conseils & services informatiques
+
+Entreprise spécialisée dans le Cloud et la virtualisation, Chapron est partenaire de professionnnels comme Oracle, Microsoft, VMWare, Dell, IBM, HP, Lenovo... De l'étude d'architecture à l'infogérance, elle réalise des projets d'infrastructure sur Windows, Linux, AIX et Solaris. Membre de la communauté Openstack, elle est engagée dans l'innovation et l'open source.
+La société Chapron réalise aussi des 'proof of concept' et des maquettes sur les nouvelles technologies : Raspberry Pi, NUC. Sa démarche est structurée par les bonnes pratiques IT et une gestion de tickets avec SLA.
+
+www.chapron.biz

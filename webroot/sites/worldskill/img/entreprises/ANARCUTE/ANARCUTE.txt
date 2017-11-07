@@ -1,0 +1,8 @@
+ANARCUTE
+
+Développement de jeux vidéo
+
+Anarcute, le plus adorable des simulateurs d’émeute, est un jeu vidéo développé par l’Anarteam, une équipe composée de cinq étudiants en 5e et dernière année de Supinfogame Rubika. Si la direction artistique résolument kawaï contribue à alléger le propos, c’est à coups de cabines téléphoniques dans les gencives que les comptes vont se régler... Le joueur contrôle directement la foule et mène à la victoire ses adorables manifestants.
+Anarcute est soutenu par Microsoft dans le cadre du programme ID@XBOX (programme de soutien aux développeurs indépendants).
+
+http://www.anarcute.com/

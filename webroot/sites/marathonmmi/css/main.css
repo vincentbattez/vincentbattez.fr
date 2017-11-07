@@ -1,0 +1,684 @@
+/*_____________________________________________________________________________________*/
+/*____________________________________-FONT LOAD-____________________________________*/
+/*_____________________________________________________________________________________*/
+@font-face {
+font-family: 'Avenir Next LT Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Regular'), url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'Avenir Next LT Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+@font-face {
+font-family: 'Avenir Next LT Pro Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Italic'), url('../fonts/AvenirNextLTPro-It.woff') format('woff');
+}
+@font-face {
+font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Ultra Light Condensed'), url('../fonts/AvenirNextLTPro-UltLtCn.woff') format('woff');
+}
+/*_________________________________________________________________________________*/
+/*____________________________________-GLOBAL-____________________________________*/
+/*_________________________________________________________________________________*/
+.btn-primary{
+    background: #088df6;
+    color: white;
+    font-family: "Avenir Next LT Pro regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+.btn-primary:hover{
+    background: white;
+    color:#000;
+}
+footer{
+    font-size: 1.1rem;
+    padding: 5px 0;
+    background: #088df6;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.separator{
+    height: 2px;
+    background: #FFF;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+body{
+    background:#fbfbfb;
+    font-family: "Avenir Next LT Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1{
+  text-transform: uppercase;
+  font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.btn{
+  border:0;
+  background:#FFF;
+  text-transform: uppercase;
+  font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  color:#333;
+  padding:10px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.btn:hover{
+  background:#088df6;
+  color:#FFF;
+}
+
+/*______________________________________________________________________________*/
+/*____________________________________-NAV-_____________________________________*/
+/*______________________________________________________________________________*/
+nav {
+    background:#272a2f;
+    height:55px;
+    line-height: 55px;
+}
+nav .logo{
+  float:left;
+  margin-right:40px;
+}
+nav .logo img{
+  width: 65px;
+  margin-top:5px;
+}
+nav ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+nav ul>li{
+  float:left;
+  margin-right:20px;
+}
+nav li.active{
+  box-shadow: 0px -3px 0px #088df6 inset;
+}
+nav a{
+  color:#FFF;
+
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+nav a:hover{
+  color:#088df6;
+    text-decoration: none;
+}
+nav .search-bar{float:right;}
+nav .form-search{
+    margin-top: 10px;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: none;
+}
+nav .nav-btn{
+  float:right;
+  margin-left:20px;
+}
+nav .login-btn{
+  width:55px;
+  height:55px;
+  background:#088df6;
+  color:white;
+  text-align:center;
+  font-size:24px;
+  line-height: 55px;
+  padding-top: 3px;
+}
+nav .add-btn{
+  width:55px;
+  height:55px;
+  background:#2ecc4f;
+}
+/*_________________________________________________________________________________*/
+/*____________________________________-HEADER-____________________________________*/
+/*_________________________________________________________________________________*/
+header{
+  min-height:500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  color:#FFF;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+header .background {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+}
+header .overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(to top right,#088df6,#2ecc4f);
+}
+header h1{
+  margin:0;
+}
+header .content{
+  max-width: calc(100% / 2);
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  text-align: justify center;
+  text-transform: uppercase;
+}
+header .btn-header{
+  margin-top:20px;
+}
+
+/*___________________________________________________________________________________*/
+/*____________________________________-HISTOIRE-____________________________________*/
+/*___________________________________________________________________________________*/
+#histoire{
+    padding: 0;
+}
+#histoire .description{
+    background: #272A2F;
+    color:white;
+    padding: 30px 40px 25px 40px;
+    position: relative;
+}
+#histoire a {
+    color: #76b1df;
+}
+#histoire h2{
+    font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+}
+#histoire h2 a{
+    font-family: "Avenir Next LT Pro regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+#histoire h4{
+    font-family: "Avenir Next LT Pro Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding-right: 17px;
+}
+#histoire .separator{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#histoire p{
+    text-align: justify;
+    font-size: 1.6rem;
+}
+.btn-primary{
+    background: #088df6;
+    color: white;
+    font-family: "Avenir Next LT Pro regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+.histoire-btn{
+    text-align: center;
+}
+.histoire-btn button{
+    padding:10px 40px;
+    position:absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+#histoire article{
+    display: flex;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+#histoire article:nth-child(odd){
+    direction:rtl;
+}
+#histoire article:nth-child(odd) > div{
+    direction:ltr;
+}
+#histoire article > div{
+    display: table-cell;
+    height: 400px;
+    overflow: auto;
+    -moz-box-sizing: border-box;
+}
+.histoire-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transition: transform 500ms ;
+    -webkit-transition: transform 500ms ;
+    -ms-transition: transform 500ms ;
+    -o-transition: transform 500ms ;
+}
+#histoire .overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.5);
+    transition: background-color 300ms ;
+    -webkit-transition: background-color 300ms ;
+    -ms-transition: background-color 300ms ;
+    -o-transition: background-color 300ms ;
+}
+#histoire article:hover .overlay{
+background-color: transparent;
+}
+#histoire article:hover .histoire-background{
+transform: scale(1);
+-webkit-transform: scale(1);
+-o-transform: scale(1);
+-ms-transform: scale(1);
+}
+/*________________________________________________________________________________*/
+/*____________________________________-STORY-____________________________________*/
+/*________________________________________________________________________________*/
+#story{
+    padding: 0;
+}
+#story .description{
+    background: #efefef;
+    color: #272a2f;
+    padding: 30px 40px 25px 40px;
+    position: relative;
+}
+#story a {
+    color: #76b1df;
+}
+#story h2{
+    font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+}
+#story h2 a{
+    font-family: "Avenir Next LT Pro regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+#story h4{
+    font-family: "Avenir Next LT Pro Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding-right: 17px;
+}
+#story .separator{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#story p{
+    text-align: justify;
+    font-size: 1.6rem;
+}
+.story-btn{
+    text-align: center;
+}
+.story-btn button{
+    padding:10px 40px;
+    position:absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+#story article{
+    display: flex;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+#story article:nth-child(odd){
+    direction:rtl;
+}
+#story article:nth-child(odd) > div{
+    direction:ltr;
+    background: #272a2f;
+    color: #efefef;
+}
+#story article > div{
+    display: table-cell;
+    height: auto;
+    overflow: auto;
+    -moz-box-sizing: border-box;
+}
+.story-background{
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+#story .overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+#story-header{
+    min-height: 300px;
+}
+#story-header p{
+    text-indent: 2em;
+    font-size: 18px;
+}
+#story-header .overlay{
+    background-image: none;
+    background: #000;
+}
+#story-header .background{
+    height: 300px;
+}
+.parties{
+    display: table;
+    text-align: justify;
+}
+.parties > div{
+    display: table-cell;
+    text-align: justify;
+    overflow: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.partie-img-right > div:first-child{
+    background: #efefef;
+}
+.partie-img-left > div:last-child{
+    background: #272a2f;
+    color: white;
+}
+.parties > div > p{
+    padding: 40px;
+}
+.partie-full{
+    margin-top: 40px;
+    color: white;
+    background: #272a2f;
+}
+.nbCom{
+    font-size: 1.4rem;
+}
+#commentaire{
+    text-align: justify;
+    padding: 10px;
+}
+#commentaire > .row{
+    display: flex
+}
+.commentDiv{
+    border: 1px solid #eeeeee;
+    background: white;
+    padding: 20px;
+    display: table-cell;
+}
+.commentDiv h3{
+    margin: 5px;
+}
+.date{
+    color:#a9a3a3;
+    font-family: "Avenir Next LT Pro regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+#story p{
+    font-size: 18px;
+}
+#commentaire p{
+    font-size: 15px;
+}
+
+#commentaire a{
+color: #088df6;
+}
+#commentaire form{
+    margin-bottom: 30px;
+    }
+#commentaire form label{
+        width: 100%;
+        display: block;
+    }
+#commentaire form textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 103px;
+    min-height: 103px;
+    }
+#commentaire .btn-primary:hover{
+    background: #272a2f;
+    color: white;
+    }
+.likeEtComment{
+    text-align: right!important;
+}
+.nbLike{
+    font-size: 1.3rem;
+}
+@media (max-width: 992px) {
+    #story article{
+        display: block;
+    }
+    .story-background{
+        display: block;
+        height: 300px!important;
+    }
+}
+/*________________________________________________________________________________*/
+/*____________________________________-CREER-____________________________________*/
+/*________________________________________________________________________________*/
+#creer{
+    padding: 0;
+}
+.ajoutHistoire, .ajoutImg{
+    z-index: 10000
+    box-shadow: 1px 1px 6px #e1e1e1;
+    text-align: left;
+    padding: 30px;
+    background: white;
+}
+.ajoutHistoire .ajoutImg input[type=file]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.ajoutHistoire input[type=text], .ajoutHistoire textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+}
+.inputPathFile{
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.inputPathFileValidate{
+    margin-right: 20px;
+    height: 20px!important;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: #fff;
+    transition:all 300ms;
+    -webkit-transition:all 300ms;
+    -ms-transition:all 300ms;
+    -o-transition:all 300ms;
+}
+.btnFile{
+    position: relative;
+    display: inline-block;
+    background: #088df6;
+    padding: 10px;
+    color: white;
+}
+.ajoutHistoire input.ajoutImg input{
+    text-align: center;
+}
+.ajoutHistoire .divAddBtn{
+    text-align: left;
+}
+.ajoutHistoire #titreHistoire{
+    text-transform: uppercase;
+    font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+}
+.envoyerHistoire input{
+    width: auto;
+    transition: background 300ms;
+    -webkit-transition: background 300ms;
+    -ms-transition: background 300ms;
+    -o-transition: background 300ms;
+}
+.envoyerHistoire{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.divAddBtn{
+    display: inline-block;
+    text-align: left;
+}
+.divAdd{
+    position: relative;
+}
+.addImg{
+    border-radius: 50%;
+    background: #088df6;
+    margin-left: 15px;
+    color:white;
+}
+#descriptionHistoire{
+    margin-bottom: 20px;
+}
+.envoyerHistoire{
+background: #088df6;
+color:white;
+}
+.ajoutImg{
+    margin-top: 20px;
+}
+.ajoutImg  textarea{
+    display: block;
+    width: 90%;
+    height: 100px;
+    max-width: 90%;
+}
+#creer h2{
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.divArrow{
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-size: 3rem;
+}
+.vertical-center{
+    display: flex;
+}
+.arrow{
+    align-self: center;
+}
+.fa-arrow-up{
+    margin-bottom: 30px;
+}
+#creer .fa{
+    transition: all 300ms;
+}
+#creer .fa:hover{
+    cursor: pointer;
+    color: #088df6;
+}
+.overlay-focus{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;right: 0;left: 0;bottom: 0;
+    width: 100%;height: 100%;
+    z-index: 999;
+    position: fixed;
+    display: none;
+}
+textarea{
+    z-index: 9000!important;
+}

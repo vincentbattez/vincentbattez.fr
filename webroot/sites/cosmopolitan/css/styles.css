@@ -1,0 +1,494 @@
+/*----------------------------------GENERAL----------------------------------*/
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+
+.short-text{
+    background: #e6e6e6;
+    padding: 60px 15%;
+}
+
+.short-text p{
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+}
+
+
+.btn{
+    padding: 13px 20px;
+    color : black;
+    text-transform: uppercase;
+    -webkit-transition:all 200ms ease-in-out;
+    -o-transition:all 200ms ease-in-out;
+    transition:all 200ms ease-in-out;
+}
+.btn:hover{
+    background: black;
+    color: white;
+}
+
+.btn-white{
+    color: white;
+    border: 2px solid white;
+}
+
+/*----------------------------------MENU----------------------------------*/
+
+.header-logo img {
+    display: block;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+}
+
+nav.header-menu {
+    text-align: center;
+}
+
+nav a {
+    text-transform: uppercase;
+    margin: 0 2rem;
+    padding: 10px;
+    transition: 300ms all ease-in-out;
+    -webkit-transition: 300ms all ease-in-out;
+    -o-transition: 300ms all ease-in-out;
+    color: #000;
+}
+
+nav a:hover {
+    color: white;
+    background: #000;
+}
+
+
+/*PC*/
+
+@media screen and (min-width:993px) {
+    .header-toogle {
+        display: none;
+    }
+}
+
+
+/*Phone Tablet*/
+
+@media screen and (max-width:993px) {
+    .header-toogle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    nav.header-menu a {
+        display: block;
+        border-top: 1px solid #ddd;
+    }
+    nav.header-menu a:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+    nav.header-menu {
+        display: block;
+    }
+    .header-menu {
+        transition: 300ms all ease-in-out;
+        -webkit-transition: 300ms all ease-in-out;
+        -o-transition: 300ms all ease-in-out;
+        max-height: 0;
+        overflow: hidden
+    }
+    .header-toogle-close {
+        display: none
+    }
+    #main-header:target .header-toogle-close {
+        display: block
+    }
+    #main-header:target .header-toogle-open {
+        display: none;
+    }
+    #main-header:target .header-menu {
+        max-height: 300px;
+    }
+}
+
+
+/*----------------------------------BANNER----------------------------------*/
+.banner {
+    position: relative;
+    height: 1080px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.banner-desc {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.banner-desc h1 {
+    font-size: 6rem;
+    font-family: 'Reenie Beanie';
+}
+
+.banner-video {
+    position: absolute;
+}
+
+.banner-video-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+}
+a.btn.btn-white:hover{
+    background: white;
+    color:black;
+}
+
+/*----------------------------------three-women----------------------------------*/
+
+.three-women a{
+    padding: 0;
+}
+.three-women{
+    max-height: 850px;
+    overflow: hidden;
+}
+
+.three-women figure{
+    position: relative;
+}
+
+.three-women h3 {
+    font-size: 4rem;
+    font-family: 'Reenie Beanie';
+}
+.three-women figcaption{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    bottom: 4rem;
+}
+
+.three-women span.btn.btn-white{
+    border: 0.3rem solid white;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    transition: all 300ms;
+}
+.three-women-item img, .three-women-item figcaption{
+  width: 100%;
+  transition: transform 500ms ease-in-out;
+  transform: translate3d(0,0,0) scale(1.05);
+}
+.three-women-item:hover img, .three-women-item:hover figcaption {
+  transform: translate3d(0,0,0) scale(1.15);
+}
+.three-women-item:hover span.btn.btn-white{
+    background-color: white;
+    color: black;
+}
+/*Phone*/
+@media (max-width: 768px) {
+    .three-women{
+            max-height: auto;
+    }
+}
+/*----------------------------------Confidence----------------------------------*/
+.confidence{
+    background-image: linear-gradient(#888, #fff);
+}
+.confidence-intro{
+    padding: 100px;
+}
+.confidence-intro h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.confidence-intro h2{
+    margin: 0;
+    color:#fff;
+    font-size: 5rem;
+}
+.confidence-intro p{
+    font-style: italic;
+}
+.confidence .link{
+    color:white;
+    text-transform: uppercase;
+}
+.confidence-prix {
+    position: absolute;
+    bottom: 270px;
+    left: 195px;
+    width: 100%;
+    display: inline-block;
+}
+.designation{
+    position: relative;
+    top: 40px;
+    right: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+span.prix{
+    position: relative;
+    top: 90px;
+    right: 188px;
+    color: white;
+    font-size: 2.5rem;
+}
+.prix span{
+    position: relative;
+    top: -30px;
+    right: -48px;
+    font-size: 1rem;
+}
+.confidence .btn{
+    position: relative;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    left: -269px;
+    bottom: -140px;
+}
+.confidence-decor img{
+    margin-top: 120px;
+    width: 100%;
+}
+.confidence-produits{
+    padding-top: 20px;
+}
+/*Phone*/
+@media (max-width: 768px) {
+    .confidence .btn{
+        position:relative;
+    margin-top: 15px;;
+        left: 0px;
+        bottom: 0px;
+    }
+    .confidence-decor img{
+        display: none;
+    }
+}
+
+/*----------------------------------tendances----------------------------------*/
+.tendances{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.tendances-item{
+    display: table-cell;
+    height: 700px;
+}
+.tendances-inverse{
+    direction:rtl;
+}
+.tendances-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+.tendances-img span{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+    background-color: rgba(0,0,0,.57);
+    text-align: center;
+    color: white;
+}
+.tendances-txt{
+    direction:ltr;
+    padding: 100px;
+    vertical-align: middle;
+}
+.title-like{
+    font-family: 'Reenie Beanie';
+}
+.tendances-item h3.title-like{
+    margin: 0;
+    font-size: 8rem;
+}
+.btn-grey{
+    border: 1px solid grey;
+}
+@media screen and (max-width: 993px){
+    .tendance{
+        display: block;
+    }
+    .tendances-item{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .tendances-img{
+        height: 400px;
+    }
+}
+/*Phone*/
+@media (max-width: 768px) {
+    .tendances-item h3.title-like{
+        font-size: 5rem;
+    }
+    .tendances-item{
+        padding: 40px;
+    }
+}
+/*----------------------------------articles----------------------------------*/
+.articles img{
+    width: 100%;
+}
+.articles-img{
+    position: relative;
+}
+.articles h4{
+    font-size: 4rem;
+    font-family: 'Reenie Beanie';
+    text-align: center;
+}
+.articles .row > div{
+    padding: 10px;
+}
+.articles a{
+    background: #eee;
+    display: block;
+    padding: 10px;
+    color:black;
+}
+.articles a:hover{
+    text-decoration: none;
+}
+.articles .articles-date:after{ /* Oon rajoute quelque chose aprÃƒÆ’Ã‚Â¨s la date */
+   content:'';                  /* son cotenu est vide */
+   position: absolute;          /* on le met en absolu (l'article-date doit ÃƒÆ’Ã‚Âªtre en relatif).*/
+   width: 50px;                 /* on lui donne une taille */
+   height: 1px;                 /* une hauteur */
+   left: 50%;                   /* on le centre mais c'est l'origine qui est centrÃƒÆ’Ã‚Â©e :(*/
+   transform: translateX(-50%); /* on le dÃƒÆ’Ã‚Â©cale, pour le centrer rÃƒÆ’Ã‚Â©ellement */
+   background: black;           /* la bordure est noire */
+   bottom: 0;                    /* il est en bas */
+}
+.articles .row span{
+    color:black;
+}
+.articles .articles-date{
+    display: block;
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: "Times New Roman",Times, serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.articles-over{
+    position: absolute;
+    background: rgba(0,0,0,.7);
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    text-align: center;
+    opacity:0;
+        -webkit-transition:400ms all ease-in-out;
+        -o-transition:400ms all ease-in-out;
+    transition:400ms all ease-in-out;
+}
+
+.articles a:hover .articles-over{
+    opacity: 1;
+}
+.articles-over .title-like{
+    position:absolute;
+    width: 100%;
+    top: 90%;
+    color:white!important;
+    left: 0;
+    font-size: 2rem;
+        -webkit-transition:400ms all ease-in-out;
+        -o-transition:400ms all ease-in-out;
+    transition:400ms all ease-in-out;
+}
+.articles a:hover .articles-over .title-like{
+    top: 40%;
+}
+/*----------------------------------bons-plans----------------------------------*/
+.bons-plans{
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    background: #eee;
+}
+.bons-plans h2{
+    font-size: 6rem;
+    font-family: 'Reenie Beanie';
+    text-align: center;
+}
+.bons-plans form p{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 24rem;
+    margin: 0 auto;
+    position: relative;
+    left: 150px;
+    margin-bottom: 30px;
+}
+.bons-plans form p:before{
+    width: 133px;
+    height: 135px;
+    background-image: url(../images/bon-reduction.png);
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    left: -160px;
+}
+/*----------------------------------FOOTER----------------------------------*/
+footer{ text-align: center;}
+footer p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.footer-socials a{
+    background-image: url(../images/socials.jpg);
+    width: 43px;
+    height: 44px;
+    display: inline-block;
+    margin: 6px;
+}
+#btn-fb{background-position: -3px -5px;}
+#btn-fb:hover{background-position: -3px -52px;}
+
+#btn-tw{background-position: -64px -5px;}
+#btn-tw:hover{background-position: -64px -52px;}
+
+#btn-yt{background-position: -126px -5px;}
+#btn-yt:hover{background-position: -126px -52px;}
+
+#btn-it{background-position: -189px -5px;}
+#btn-it:hover{background-position: -189px -52px;}
+
+#btn-tu{background-position: -251px -5px;}
+#btn-tu:hover{background-position: -251px -52px;}
+
+/*Phone*/
+@media (max-width: 768px) {
+    footer{ display: none;}

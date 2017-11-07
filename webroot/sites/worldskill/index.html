@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>SerreShare</title>
+        
+        <link rel="stylesheet" href="css/reset.css" type="text/css"> <!--RESET-->
+        <link rel="stylesheet" href="css/main.css" type="text/css"> <!--MAIN-->
+        <link rel="stylesheet" href="js/jquery-1.12.1.min.js" type="text/javascript"> <!--Jquery-->
+        <link rel="stylesheet" href="js/script.js" type="text/javascript"> <!--script-->
+        
+        <link rel="icon" href="img/header/logo-serre.jpg"> <!--favicon-->
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Lieu de convergence et d’échange des savoirs, la SerreShare offre à ses entreprises un écosystème dynamique leur permettant de partager et d'écrire des articles favorisant le partage entre les entreprises">
+        <meta name="keywords" content="SerreShare, Serre Share, serre, SerreNumerique, Serre Numerique, numerique, numérique, partage, articles, échange, echange, savoirs, savoir, entreprises, entreprise">
+        <meta name="viewport" content="width=device-width">
+        
+    </head>
+    <body>
+        <!--________________________________________________________________________________________________--NAV-->
+        <header>
+            <div class="opacity_black"></div>
+            <div class="w1024p">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="Accueil">Accueil</a></li>
+                        <li><a href="#actualité">Actualité</a></li>
+                        <li><a href="entreprise.html">Entreprises</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                        <li>
+                            <form action="recherche.php" method="get">
+                                <input type=text placeholder="Rechercher"/>
+                            </form>
+                        </li>
+                        <li id="profil">
+                            <span id="notif">5</span>
+                            <img alt="photo de profil" src="img/header/profil-jerome.jpg"/>  
+                        </li>
+                        <li><a class="deco" href="#">Anarcute</a></li>
+                        <li><a class="deco" href="#">Déconnection</a></li>
+                    </ul>
+                </nav>
+<!--________________________________________________________________________________________________--HEADER-->
+                <img id="logo_serre" alt="logo Serre Numérique" src="img/header/logo-serre.jpg"/>
+
+                <h1>La Serre Numérique Lieu D’Échange Des Savoirs</h1>
+                <div id="separateur"></div>
+                <p id="resume">La Serre Numérique offre à ses résidents un écosystème dynamique et un environnement de travail exceptionnel, développé par la CCI Grand Hainaut à Valenciennes. Fort de son développement avec plus de 20 entreprises, la Serre Numérque désire favoriser le partage entre les entreprises.</p>
+            </div>
+        </header>
+<!--________________________________________________________________________________________________--ECRIRE ARTICLE-->
+        <section>
+            <h2 id="actualité">Fil d'actualité <span class="separateur_h2"></span></h2>
+            <div class="w1024p clearfix">
+                
+                <article id="cree_article">
+                    <button id="put_img" dropzone="move"></button>
+                    <form action="ecrire_article.php" method="get">
+                        <input type=text placeholder="Votre titre"/>
+                        <textarea placeholder="Insérer votre texte...."></textarea>
+                        <button class="button">Envoyer</button>
+                    </form>
+                </article>
+                <aside>
+                    <h3>Serre Numérique</h3>
+                    <img alt="Image de l'évenement Serre numérique" src="img/actu/evenement_img.jpg"/>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus Morbi accumsan ipsum velit.<br/> Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos veliquet. Aenean  bibendu elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus...</p>
+                    <button class="button">Lire plus</button>
+                </aside>
+            </div>
+        </section>
+<!--________________________________________________________________________________________________--Article-->            
+        <section id="article_entreprise">
+            <div class="w1024p clearfix">
+                <!--ARTICLE ANARCUTE (1)-->
+                <div class="content_article">
+                    <h3>Développement de jeux vidéo</h3>
+                    <a href="img/actu/article_anarcute/image1.jpg">
+                        <div class="article_img">
+                            <span class="opacity_jaune"></span>
+                            <img class="loupe" alt="agrandir l'image" src="img/actu/loupe.png">
+                        </div>
+                    </a>
+                    <p>Anarcute, le plus adorable des simulateurs d’émeute, est un jeu vidéo développé par l’Anarteam, une équipe composée de cinq étudiants en 5e et dernière année de Supinfogame Rubika. Si la direction artistique résolument kawaï contribue à alléger le propos c’est à coups de cabines téléphoniques dans les gencives que les comptes vont se régler. Le joueur...</p>
+                    <a href="entreprise_anarcute.html"><img class="logo_entreprise" alt="Logo de l'entreprise" src="img/actu/article_anarcute/anarcute.png"/></a>
+                    <p><a href="entreprise_anarcute.html">Anarcute</a> - 10/03/2016 à 11:24</p>
+                    <a href="article_anarcute.html"><button class="button lire_plus">Lire plus</button></a>
+                    <a href="article_anarcute.html"><button class="button com lire_plus">5</button></a>
+                    <a href="#"><button class="button partager">Partager</button></a>
+                </div>
+                
+                <!--ARTICLE ??? (2)-->
+                <div class="content_article">
+                    <h3>Applications mobiles, édition de livres enrichis, production de jeux vidéo</h3>
+                    <a href="img/actu/article_anarcute/image1.jpg">
+                        <div class="article_img">
+                            <span class="opacity_jaune"></span>
+                            <img class="loupe" alt="agrandir l'image" src="img/actu/loupe.png">
+                        </div>
+                    </a>
+                    <p>
+                    Applications mobiles, édition de livres enrichis, production de jeux vidéo
+
+                    Byook est un studio de jeux vidéo indépendant autoédité, à l’origine d’un mariage inédit entre livre, cinéma et jeu vidéo. Avec cinq titres parus à l’international, Byook révolutionne la narration multimédia et vous fait découvrir des histoires comme vous ne les avez jamais lues !
+                    Byook c'est aussi Byook Apps, spécialiste des projets mobiles & web. Capable de vous accompagner pour tout type d’application ou site responsive design avec un savoir-faire unique et une approche ludique qui a fait ses preuves auprès du grand public.
+
+                    www.byook.com
+                    </p>
+                    <a href="#"><img class="logo_entreprise" alt="Logo de l'entreprise" src="img/actu/article_byook/BYOOK.png"/></a>
+                    <p><a href="#">Byook</a> - 10/03/2016 à 11:24</p>
+                    <a href="#"><button class="button lire_plus">Lire plus</button></a>
+                    <a href="#"><button class="button com lire_plus">5</button></a>
+                    <a href="#"><button class="button partager">Partager</button></a>
+                </div>
+                
+            </div>
+        </section>
+<!--________________________________________________________________________________________________--FOOTER-->
+        <footer>
+            <div class="w1024p">
+                <a href="index.html"><img alt="logo de la serre numérique" src="img/header/logo-serre.jpg"/></a>
+                <p>&copy; SerreShare | tout droit réservé</p>
+                <button class="button" id="contact">Contact</button>
+            </div>
+        </footer>
+        
+        
+        
+        
+    </body>
+</html>
