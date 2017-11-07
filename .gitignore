@@ -58,4 +58,4 @@ tmp/
 # /config/app.php
 # /vendor/*
 
-webroot/sites/*/*.md
+webroot/sites/**/*.md
