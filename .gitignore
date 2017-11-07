@@ -33,27 +33,31 @@ tmp/
 
 
 ## DEV
-webroot/builds/
+# webroot/builds/
 
 ## PROD
-# .babelrc
-# .editorconfig
-# .eslintignore
-# .gitattributes
-# .eslintrc.json
-# .travil.yml
-# .composer.json
-# .composer.lock
-# Gruntfile.js
-# LICENSE.md
-# package.json
-# package-lock.json
-# testBenchmark.md
-# yarn.md
-# webroot/dev
-# /bin
-# /logs
-# /tests
-# *.psd
-# /config/app.php
-# /vendor/*
+.babelrc
+.editorconfig
+.eslintignore
+.gitattributes
+.eslintrc.json
+.travis.yml
+README.md
+composer.json
+composer.lock
+config.rb
+Gruntfile.js
+LICENSE.md
+package.json
+package-lock.json
+testBenchmark.md
+yarn.md
+yarn.lock
+webroot/dev
+/bin
+/logs
+/tests
+/tmp
+*.psd
+/config/app.php
+webroot/sites/*/*.md
