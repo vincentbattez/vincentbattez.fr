@@ -51,5 +51,5 @@ webroot/builds/
 # /tests
 # /tmp
 # *.psd
-#/config/app.php
-/vendor/*
+# /config/app.php
+# /vendor/*
