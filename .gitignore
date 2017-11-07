@@ -54,6 +54,6 @@ webroot/dev
 /bin
 /logs
 /tests
+/tmp
 *.psd
 /config/app.php
-/vendor/*
