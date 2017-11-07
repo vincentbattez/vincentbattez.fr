@@ -27,6 +27,11 @@
 ### NPM ###
 /node_modules
 
+
+## General
+tmp/
+
+
 ## DEV
 webroot/builds/
 
@@ -49,7 +54,6 @@ webroot/builds/
 # /bin
 # /logs
 # /tests
-# /tmp
 # *.psd
 # /config/app.php
 # /vendor/*
