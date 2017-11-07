@@ -60,3 +60,4 @@ webroot/dev
 /tmp
 *.psd
 /config/app.php
+webroot/sites/*/*.md
