@@ -1,0 +1,34 @@
+
+/*______________________________-INPUT-__________________________*/
+input, textarea{
+    padding: 10px; @include media(phone){&{padding: 5px;}}
+    border-radius: 2px;
+    border: 1px solid #dedede;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.input{
+    label{
+        display: block;
+        color: #8e8c8c;
+        font-size: $font-size-small;
+        margin: 15px 0 10px 0;
+    }
+}
+.submit input[type=submit] {
+  margin-top: 20px;
+  color: white;
+  font-size: $font-size-small;
+  border: none;
+  background: $color-primary;
+  width: auto;
+  padding: 15px;
+  @include transition (300ms all);
+  @include box-shadow($shadow-1);
+}
+
+.submit input[type=submit]:hover {
+  background: $color-primary;
+  @include box-shadow($shadow-2);
+}

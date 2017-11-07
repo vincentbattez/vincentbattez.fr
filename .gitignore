@@ -1,0 +1,71 @@
+
+# Created by https://www.gitignore.io/api/sass,cakephp,git
+
+### CakePHP ###
+# CakePHP 3
+
+/vendor/*
+/config/app.php
+
+/tmp/cache/models/*
+!/tmp/cache/models/empty
+/tmp/cache/persistent/*
+!/tmp/cache/persistent/empty
+/tmp/cache/views/*
+!/tmp/cache/views/empty
+/tmp/sessions/*
+!/tmp/sessions/empty
+/tmp/tests/*
+!/tmp/tests/empty
+
+/logs/*
+!/logs/empty
+
+# CakePHP 2
+
+/app/tmp/*
+/app/Config/core.php
+/app/Config/database.php
+/vendors/*
+
+### Git ###
+*.orig
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+# End of https://www.gitignore.io/api/sass,cakephp,git
+\.idea/
+
+
+### phpStorm ###
+/.idea
+
+/launch.bat
+/node_modules
+/webroot/sites/**
+webroot/builds/
+
+
+## PROD
+# .babelrc
+# .editorconfig
+# .eslintignore
+# .gitattributes
+# .eslintrc.json
+# .travil.yml
+# .composer.json
+# .composer.lock
+# Gruntfile.js
+# LICENSE.md
+# package.json
+# package-lock.json
+# testBenchmark.md
+# yarn.md
+# webroot/dev
+# /bin
+# /logs
+# /tests
+# /tmp
+# *.psd

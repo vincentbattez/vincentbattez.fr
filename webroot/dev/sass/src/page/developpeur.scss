@@ -1,0 +1,218 @@
+/*______________________________-CATEGORY-______________________________*/
+section.header{
+    background-position: right;
+}
+/* INTRO*/
+.projectDev-date{
+    font-size: $font-size-regular;
+    color: $color-primary;
+}
+.projectDev-title-block{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; @include media(phone){&{margin-top: 35px;}}
+    margin-bottom: 70px; @include media(phone){&{margin-bottom: 30px;}}
+    h2 { margin: 0; }
+    .projectDev-title{
+        font-size: $font-size-x-large; @include media(phone){&{font-size:$font-size-x-large-m;}}
+        font-weight: $font-weight-bold;
+        display: block;
+        margin: 0;
+    }
+    .projectDev-slogan{
+        font-size: $font-size-xx-large; @include media(phone){&{font-size:$font-size-xx-large-m;}}
+        font-weight: $font-weight-light;
+        display: block;
+        margin: 0;
+    }
+    .projectDev-link{
+        font-size: $font-size-x-large; @include media(phone){&{font-size:$font-size-x-large-m;}}
+        font-weight: $font-weight-light;
+        display: block;
+    }
+}
+/* MOCKUP*/
+.projectDev-mockup-block{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    @include media(phone){&{margin-bottom: 50px;}}
+    .projectDev-mockup-image{
+        width: 95%;
+    }
+    .overflowhidden{
+        width: 1041px;
+        margin: 0 auto;
+        top: -274px;
+        height: 50%;
+        position: relative;
+        overflow: hidden;
+        @media only screen and (max-width: $lg){
+            &{
+                width: 859px;
+            }
+        }
+        @media only screen and (max-width: $pc){
+            &{
+                width: 657px;
+                top: -174px;
+            }
+        }
+        @media only screen and (max-width: $phone){
+            &{
+                display: none;
+            }
+        }
+        .site{
+            position: relative;
+            top: -599px;
+            width: 95%;
+            @include box-shadow($shadow-4);  @include media(phone){&{display: none;}}
+        }
+    }
+}
+.projectDev-content{
+    width: 70%; @include media(phone){&{width: 90%;}}
+    text-align: center;
+    margin: 40px auto 0px auto; @include media(phone){&{margin: 0 auto;}}
+    position: relative;
+    top: 0;  
+    @include media(phone){&{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }}
+ }
+ .one-site{
+    @include media(phone){&{margin: -20px auto 30px auto!important; top: 0!important;}}
+ }
+/* AVIS DEV*/
+.AvisDev{
+    padding-top: 60px;
+    padding-bottom: 70px; @include media(phone){&{padding-bottom: 30px;}}
+    .left{
+        position: relative;
+        width: 100%;
+
+        .tablet{
+            width: 85%;
+            @include transition(all 700ms ease);
+            @include media(phone-landscape){
+                &{
+                    width: 40%;
+                    margin-left: 25%;
+                }
+            }
+            @media only screen and (max-width: $pc){
+                &{
+                    bottom: 300px;
+                    width: 130%;
+                    right: -26px;
+                    position: absolute;
+                }
+            }
+            @media only screen and (max-width: $phone){
+                &{
+                    width: 85%;
+                    position: initial;
+                }
+            }
+        }
+
+        .phone{
+            @include transition(all 700ms ease);
+            width: 50%;
+            position: absolute;
+            bottom: -50px;
+            right: 10px;
+            @include media(phone-landscape){
+                &{
+                    width: 22%;
+                    bottom: 2px;
+                    right: 38%;
+                    transform: translateX(50%);
+                }
+            }
+            @media only screen and (max-width: $lg){
+                &{
+                    bottom: 150px;
+                }
+            }
+            @media only screen and (max-width: $pc){
+                &{
+                    bottom: 200px;
+                    width: 80%;
+                    right: -45px;
+                }
+            }
+            @media only screen and (max-width: $phone){
+                &{
+                    width: 50%;
+                    bottom: -50px;
+                    right: 10px;
+                }
+            }
+        }
+
+    }
+    .right{
+        text-align: center;
+        width: 100%;
+        padding: 0px 70px; @include media(phone){&{padding: 0; margin-top: 70px;}}
+        .AvisDev-title{
+            font-size: 6.3rem;
+            font-weight: $font-weight-light;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .AvisDev-avis{
+            text-align: justify;
+        }
+        .note-texte{
+            position: absolute;
+            right: 0; top: -32px;
+            font-size: $font-size-regular; @include media(phone){&{font-size:$font-size-regular-m;}}
+        }
+        .note-bar{
+            width: 100%;
+            height: 30px;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        .note-fill{
+            width: 100%;
+            background: #c1c1c1;
+            &:not(:last-child){
+                margin-right: 3px;
+            }
+            &.active{background: $color-primary;}
+        }
+    }
+}
+.column-2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  @include media(phone){&{display: block;}}
+}
+.projects-title{
+    margin-top: 36px!important;
+}
+.listTechno{
+    width: 100%;
+    margin-top: 50px; @include media(phone){&{margin-top: 0;}}
+    & ul li{
+        display: block;
+        font-size: $font-size-regular;
+        & small {color: $color-primary;}
+    }
+    @include media(phone){
+        & h3{
+            font-size: 1.6rem!important;
+            text-align:left;
+        }
+    }
+}
