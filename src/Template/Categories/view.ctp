@@ -77,7 +77,7 @@ $this->end();
     <div class="container">
     <?php if (h($category->slug != 'photographie')): ?>
 
-        <h3 class="projects-title">Mes projets</h3>
+        <h3 class="projects-title" id="projet-section">Mes projets</h3>
         <div class="projects-row"> <!-- Debut row -->
             <!-- Articles  -->
             <?php foreach ($projects as $project): ?>

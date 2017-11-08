@@ -215,6 +215,13 @@ $this->end();
                 </article>
 
             <?php endforeach; ?>
+            <a href="<?= $this->Url->build([
+            'controller' => 'Categories',
+            'action' => 'view',
+            'developpeur'
+            ]); ?>#projet-section" class="back-project-link">
+                Voir tous les projets web
+            </a>
         </div> <!-- Fin row -->
     </div> <!-- Fin container -->
 </section>

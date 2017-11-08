@@ -25,7 +25,7 @@
     }
 }
 .projects{
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     @include media(phone){&{padding-bottom: 20px}}
 
     @media (max-width: 992px) {
@@ -46,6 +46,12 @@
                     justify-content: start;
         -ms-flex-flow: wrap;
             flex-flow: wrap;
+        .back-project-link{
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            font-size: 20px;
+        }
     }
 
     .projects-container{
@@ -68,7 +74,7 @@
     .projects-title{
         text-align: center;
         margin-top: 100px;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
         @include media(phone){&{
             margin-top: 20px;
             margin-bottom: 20px;
