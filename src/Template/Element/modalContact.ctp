@@ -24,7 +24,7 @@
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </figure>
                 </a>
-                <a href="https://linkedin.com/in/vincent-battez-040072114/" target="_blank">
+                <a href="https://www.linkedin.com/in/vincent-battez-%E2%AD%90-040072114//" target="_blank">
                     <figure class="social linkedin flex-center">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </figure>
