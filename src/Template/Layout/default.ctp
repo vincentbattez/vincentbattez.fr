@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta name="google-site-verification" content="zIEmRrGHHkHZx10MQ-M_xPm6Cq3p3sDQ29vMElq_y0U" />
     <?= $this->Html->charset() ?>
@@ -39,6 +39,17 @@
 <meta property="og:description" content="Vous avez besoin d&rsquo;un site web ? d&rsquo;une carte de visite, d'un d&eacute;pliant, ou un logo pour votre entreprise ? Aller donc voir mon site !">
 <meta property="og:title" content="vincentbattez.fr">
 <meta property="og:url" content="vincentbattez.fr">
+
+<meta name="google-site-verification" content="zIEmRrGHHkHZx10MQ-M_xPm6Cq3p3sDQ29vMElq_y0U" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111278831-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111278831-1');
+</script>
 
 
     <?= $this->Html->css('/builds/css/general.min') ?>
