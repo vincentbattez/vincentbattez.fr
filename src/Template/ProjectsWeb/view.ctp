@@ -53,7 +53,7 @@ $this->end();
 <section class="header row middle-xs" id="home"
  style="background-image: url('<?= $this->Url->build('/img/developpeur/'.h($projectsWeb->slug).'/header.jpg', true) ?>')">
     <header class="container">
-        <h1 class="display"><?= h($projectsWeb->name) ?></h1>
+        <h1 class="display" itemprop="name"><?= h($projectsWeb->name) ?></h1>
     </header>
     <div class="overlay"></div>
 </section>
@@ -61,17 +61,17 @@ $this->end();
 <?= $this->element('nav2'); ?>
 
 <!-- PROJECT -->
-<div class="gradiant">
+<div class="gradiant" itemscope itemtype="http://schema.org/Article">
     <section class="projectDev one-site container">
         <div class="row">
-            <p>Site réalisé le <span class="projectDev-date"><?= $projectsWeb->created->i18nformat('dd MMMM YYYY') ?></span></p>
+            <p>Site réalisé le <span class="projectDev-date" itemprop="datePublished" content="<?= $projectsWeb->created ?>"><?= $projectsWeb->created->i18nformat('dd MMMM YYYY') ?></span></p>
             
             <div class="projectDev-title-block">
                 <h2>
-                    <span class="projectDev-title"><?= h($projectsWeb->name) ?></span>
-                    <span class="projectDev-slogan"><?= h($projectsWeb->slogan) ?></span>
+                    <span class="projectDev-title" itemprop="articleSection"><?= h($projectsWeb->name) ?></span>
+                    <span class="projectDev-slogan" itemprop="headline"><?= h($projectsWeb->slogan) ?></span>
                 </h2>
-                <a class="projectDev-link" target="_blank" href="<?= h($projectsWeb->url) ?>">
+                <a class="projectDev-link" target="_blank" href="<?= h($projectsWeb->url) ?>" itemprop="url">
                     Voir le site
                 </a>
             </div>
@@ -80,7 +80,8 @@ $this->end();
                     $this->Html->image("/img/developpeur/".h($projectsWeb->slug)."/iMac.png",
                     [
                         "alt" => "Mockup du site ".h($projectsWeb->slug)." sur un PC",
-                        "class" => "projectDev-mockup-image"
+                        "class" => "projectDev-mockup-image",
+                        "itemprop" => "image"
                     ]);
                 ?>
                 <div class="overflowhidden">
@@ -88,14 +89,17 @@ $this->end();
                         $this->Html->image("/img/developpeur/".h($projectsWeb->slug)."/site.jpg",
                         [
                             "alt" => "Suite du site ".h($projectsWeb->slug)."",
-                            "class" => "site animated"
+                            "class" => "site animated",
+                            "itemprop" => "image"
                         ]);
                     ?>
                 </div>
             </div>
-            <p class="projectDev-content one-site"><?= html_entity_decode(h($projectsWeb->content)) ?></p>
+            <p class="projectDev-content one-site" itemprop="articleBody"><?= html_entity_decode(h($projectsWeb->content)) ?></p>
         </div>
     </section>
+
+    <meta itemprop="author" content="Vincent Battez">
 </div>
 
 <!-- AVIS -->
@@ -108,14 +112,16 @@ $this->end();
                         $this->Html->image("/img/developpeur/".h($projectsWeb->slug)."/iPad.png",
                         [
                             "alt" => "Mockup du site ".h($projectsWeb->slug)." sur une tablette",
-                            "class" => "tablet"
+                            "class" => "tablet",
+                            "itemprop" => "image"
                         ]);
                     ?>
                     <?=
                         $this->Html->image("/img/developpeur/".h($projectsWeb->slug)."/iPhone.png",
                         [
                             "alt" => "Mockup du site ".h($projectsWeb->slug)." sur un smartphone",
-                            "class" => "phone"
+                            "class" => "phone",
+                            "itemprop" => "image"
                         ]);
                     ?>
                 </div>
@@ -125,7 +131,7 @@ $this->end();
                     </h3>
                     <p class="AvisDev-avis"><?= html_entity_decode(h($projectsWeb->avis)) ?></p>
                     <div class="hidden" id="ValueRating"><?= h($projectsWeb->rating) ?></div>
-                    <div class="note-bar">
+                    <div class="note-bar" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
                         <div class="note-fill" id="note1"></div>
                         <div class="note-fill" id="note2"></div>
                         <div class="note-fill" id="note3"></div>
@@ -133,6 +139,11 @@ $this->end();
                         <div class="note-fill" id="note5"></div>
                         <div class="note-fill" id="note6"></div>
                         <span class="note-texte">Erreur</span>
+                        
+                        <meta itemprop="ratingValue" content="<?= h($projectsWeb->rating) ?>">
+                        <meta itemprop="bestRating" content="<?= h($projectsWeb->rating) ?>">
+                        <meta itemprop="worstRating" content="<?= h($projectsWeb->rating) ?>">
+                        <meta itemprop="ratingCount" content="1">
                     </div>
                     <?php if ($nbLivrable > 1): ?>
 

@@ -83,32 +83,43 @@ $this->end();
             <?php foreach ($projects as $project): ?>
 
                 <article class="projects-container">
-                        <div class="projects-article article-<?= h($category->slug) ?>">
+                        <div class="projects-article article-<?= h($category->slug) ?>" itemscope itemtype="http://schema.org/Article">
+                            <meta itemprop="author" content="Vincent Battez">
                             <?php
                                 if (h($category->slug) == 'developpeur') { // developpeur
-                /*linkWeb*/        echo '<a href="'.$this->Url->build(['controller' => 'ProjectsWeb', 'action' => 'view', h($project->slug)]).'">';
+                                    echo '<meta itemprop="articleSection" content="Développement web">';
+                /*linkWeb*/        echo '<a itemprop="url" href="'.$this->Url->build(['controller' => 'ProjectsWeb', 'action' => 'view', h($project->slug)]).'">';
                 /*img*/            echo $this->Html->image('developpeur/' . h($project->slug) . '/icon.svg',
-                                        ['alt' => 'Icon pour le site ' . h($project->name) . '',
-                                            'class' => 'icon']
+                                        [
+                                            'alt' => 'Icon pour le site ' . h($project->name) . '',
+                                            'class' => 'icon'
+                                        ]
                                     );
-                                    echo '<small class="date">'.h($project->created->i18nformat('dd MMMM YYYY')).'</small>';
+                                    echo '<small class="date" itemprop="datePublished" content="'.h($project->created).'">'.h($project->created->i18nformat('dd MMMM YYYY')).'</small>';
                                 } else { // infographiste
+                                    echo '<meta itemprop="articleSection" content="Infographie">';
                 /*linkInfo*/        echo '<a href="'.$this->Url->build(['controller' => 'ProjectsInfo', 'action' => 'view', h($project->slug)]).'">';
                                 }
                             ?>
                             <?php
                             if (h($category->slug == 'developpeur')) // developpeur
                                 echo $this->Html->image('' . h($category->slug) . '/' . h($project->slug) . '/site.jpg',
-                                    ['alt' => 'Mockup du site ' . h($project->name) . '',
-                                        'class' => 'image']
+                                    [
+                                        'alt' => 'Mockup du site ' . h($project->name) . '',
+                                        'class' => 'image',
+                                        'itemprop' => 'image'
+                                    ]
                                 );
                             else // insfographiste
                                 echo $this->Html->image('' . h($category->slug) . '/' . h($project->slug) . '/'.h($project->slug).'-header.jpg',
-                                    ['alt' => h($project->name),
-                                        'class' => 'image']
+                                    [
+                                        'alt' => h($project->name),
+                                        'class' => 'image',
+                                        'itemprop' => 'image'
+                                    ]
                                 );
                             ?>
-                            <h4 class="projects-article-title">
+                            <h4 class="projects-article-title" itemprop="name">
                                 <?php
                                     if (h($category->slug == 'developpeur')) { // developpeur
                                         echo ucfirst(h($project->name)); // nom du site
