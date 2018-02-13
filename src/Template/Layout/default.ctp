@@ -100,5 +100,30 @@
     <?= $this->Html->script('/builds/js/general.min') ?>
     <!-- Other script -->
     <?= $this->fetch('script') ?>
+    
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://vincentbattez.fr/",
+            "logo": "https://vincentbattez.fr/img/logo/logo.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+33 7 85 59 80 48",
+                "email": "contact@vincentbattez.fr",
+                "contactType": "customer service"
+            }]
+        } {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Vincent Battez",
+            "url": "https://vincentbattez.fr/",
+            "sameAs": [
+                "https://www.facebook.com/vincent.battez",
+                "https://www.linkedin.com/in/vincentbattez/"
+            ]
+        }
+
+    </script>
 </body>
 </html>
