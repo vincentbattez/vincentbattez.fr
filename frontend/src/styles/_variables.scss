@@ -1,0 +1,32 @@
+$spacerCollection: (
+  "1": .4rem,
+  "2": .8rem,
+  "3": 1.6rem,
+  "4": 2.4rem,
+  "5": 3.6rem,
+);
+
+$fontSizeCollection: (
+  "h1": 3.6rem,
+  "h2": 1.8rem,
+  "p": 1.8rem,
+  "a": 1.6rem,
+);
+
+:root {
+  @each $name, $spacer in $spacerCollection {
+    --spacer-#{$name}: #{$spacer}
+  }
+
+  @each $name, $size in $fontSizeCollection {
+    --font-size-#{$name}: #{$size}
+  }
+
+  --grey: #CCCCCC;
+  --grey-lighten: #D9D9D9;
+  --black: #160743;
+  --white: #FFFFFF;
+
+  --primary: #2560FC;
+  --secondary: #FF0844;
+}

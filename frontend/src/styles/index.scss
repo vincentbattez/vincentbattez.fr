@@ -1,0 +1,11 @@
+@import url('~normalize.css/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+body, html, #root {
+  height: 100%;
+}
+
+@import './_variables.scss';
+@import './_utils.scss';
+
+@import './_typography.scss';

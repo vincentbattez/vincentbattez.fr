@@ -1,0 +1,26 @@
+@each $name, $value in $spacerCollection {
+  .mt-#{$name} { margin-top: $value; }
+  .mr-#{$name} { margin-right: $value; }
+  .mb-#{$name} { margin-bottom: $value; }
+  .ml-#{$name} { margin-left: $value; }
+
+  .pt-#{$name} { padding-top: $value; }
+  .pr-#{$name} { padding-right: $value; }
+  .pb-#{$name} { padding-bottom: $value; }
+  .pl-#{$name} { padding-left: $value; }
+}
+
+.mt-0 { margin-top: 0; }
+.mr-0 { margin-right: 0; }
+.mb-0 { margin-bottom: 0; }
+.ml-0 { margin-left: 0; }
+
+.pt-0 { padding-top: 0; }
+.pr-0 { padding-right: 0; }
+.pb-0 { padding-bottom: 0; }
+.pl-0 { padding-left: 0; }
+
+.container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
