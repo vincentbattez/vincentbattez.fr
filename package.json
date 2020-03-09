@@ -1,0 +1,8 @@
+{
+  "name": "vincentbattez.fr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vincentbattez/vincentbattez.fr.git",
+  "author": "Vincent Battez <vincent.battez.pro@gmail.com>",
+  "license": "MIT"
+}
