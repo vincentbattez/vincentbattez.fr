@@ -27,6 +27,12 @@
       "repeatable": false,
       "component": "link.link",
       "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
     }
   }
 }
