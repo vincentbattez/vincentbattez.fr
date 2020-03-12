@@ -1,29 +1,62 @@
 import React from 'react';
+import { useQuery } from '@apollo/react-hooks';
 import './homepage.component.scss';
 
+import HOMEPAGE_QUERY from '../../services/homepage.service'
+
 function Homepage() {
+  const { loading, error, data } = useQuery(HOMEPAGE_QUERY);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  const { homepage } = data;
+
   return (
     <section className="homepage container">
-      <div className="text-section">
-        <h1 className="h2 mt-0 mb-3">Porfolio Développeur Front-End Confirmé</h1>
-        <h2 className="h1 mt-0 mb-2">Développeur Front-End Confirmé</h2>
-        <p className="p mt-0 mb-4">Je suis à la recherche d’un emploi en tant que développeur Front-End au Canada.</p>
-
-        <a
-          className="link"
-          href="https://drive.google.com/file/d/1fRVETKDa5nIfmKlxHCIVPr0hVNOYE2lY/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Voir mon CV
-        </a>
-      </div>
-
+      <TextSection
+        subTitle={homepage.subTitle}
+        title={homepage.title}
+        description={homepage.description}
+        cv={homepage.cv}
+      />
       <div className="image-section">
-        <img src="../../assets/face-vector.svg" alt=""/>
+        <img
+          src={`http://localhost:1337/${homepage.image.url}`}
+          alt=""
+        />
       </div>
     </section>
     );
+}
+
+type TextSectionProps = {
+  subTitle: string
+  title: string
+  description: string
+  cv: {
+    url: string
+    label: string
+  }
+}
+
+function TextSection({subTitle, title, description, cv}: TextSectionProps) {
+  return (
+    <div className="text-section">
+      <h1 className="h2 mt-0 mb-3">{subTitle}</h1>
+      <h2 className="h1 mt-0 mb-2">{title}</h2>
+      <p className="p mt-0 mb-4">{description}</p>
+
+      <a
+        className="link"
+        href={cv.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {cv.label}
+      </a>
+    </div>
+  )
 }
 
 export default Homepage;
