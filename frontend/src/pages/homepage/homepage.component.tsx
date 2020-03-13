@@ -1,11 +1,13 @@
 import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
-import './homepage.component.scss';
+import { useQuery } from '@apollo/react-hooks'; // @refactor: no api call in component
 
 import HOMEPAGE_QUERY from '../../services/homepage.service'
+import { TextSection } from './textSection/textSection.component'
+import { ImageSection } from './imageSection/imageSection.component'
+import './homepage.component.scss';
 
 function Homepage() {
-  const { loading, error, data } = useQuery(HOMEPAGE_QUERY);
+  const { loading, error, data } = useQuery(HOMEPAGE_QUERY); // @refactor: no api call in component
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
@@ -13,50 +15,19 @@ function Homepage() {
   const { homepage } = data;
 
   return (
-    <section className="homepage container">
+    <section className="page-homepage container">
       <TextSection
+        className="col-6"
         subTitle={homepage.subTitle}
         title={homepage.title}
         description={homepage.description}
         cv={homepage.cv}
       />
-      <div className="image-section">
-        <img
-          src={`http://localhost:1337/${homepage.image.url}`}
-          alt=""
-        />
-      </div>
+      <ImageSection
+        image={homepage.image}
+      />
     </section>
     );
-}
-
-type TextSectionProps = {
-  subTitle: string
-  title: string
-  description: string
-  cv: {
-    url: string
-    label: string
-  }
-}
-
-function TextSection({subTitle, title, description, cv}: TextSectionProps) {
-  return (
-    <div className="text-section">
-      <h1 className="h2 mt-0 mb-3">{subTitle}</h1>
-      <h2 className="h1 mt-0 mb-2">{title}</h2>
-      <p className="p mt-0 mb-4">{description}</p>
-
-      <a
-        className="link"
-        href={cv.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {cv.label}
-      </a>
-    </div>
-  )
 }
 
 export default Homepage;

@@ -13,6 +13,8 @@ $fontSizeCollection: (
   "a": 1.6rem,
 );
 
+$grid-count: 12;
+
 :root {
   @each $name, $spacer in $spacerCollection {
     --spacer-#{$name}: #{$spacer}

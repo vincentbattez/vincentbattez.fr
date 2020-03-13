@@ -21,6 +21,15 @@
 .pl-0 { padding-left: 0; }
 
 .container {
+  display: grid;
+  grid-template-columns: repeat($grid-count, 1fr);
+  grid-gap: 2rem;
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+@for $i from 1 through $grid-count {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
 }
