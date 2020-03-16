@@ -1,0 +1,46 @@
+.social {
+  --size: 4.2rem;
+
+  width: var(--size);
+  height: var(--size);
+  background-image: var(--primary-gradient);
+  border-radius: 4px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &::before {
+    --gradiant-size: 0;
+
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--gradiant-size);
+    height: var(--gradiant-size);
+    background: radial-gradient(circle closest-side, var(--primary), transparent);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+  }
+
+  &:hover::before {
+    --gradiant-size: calc(var(--size) * 1.5);
+  }
+
+  &:active::before {
+    --gradiant-size: calc(var(--size) * 4);
+  }
+
+  &__image {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    pointer-events: none;
+  }
+}
+
+
+

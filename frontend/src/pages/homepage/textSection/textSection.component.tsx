@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Social } from "../../../components/social/social.component";
+
 export function TextSection({ className, subTitle, title, description, cv }: TextSectionProps) {
   return (
     <div className={`${className} text-section`}>
@@ -15,12 +17,16 @@ export function TextSection({ className, subTitle, title, description, cv }: Tex
       >
         {cv.label}
       </a>
+      <Social
+        className="ml-4"
+        logoSrc="http://file1.logovector.net/thumbs/49068-linkedin-logo-icon-vector-icon-vector-eps.png"
+        url="#"
+      />
     </div>
   );
 }
 
 type TextSectionProps = {
-  className: string
   subTitle: string
   title: string
   description: string
@@ -28,4 +34,5 @@ type TextSectionProps = {
     url: string
     label: string
   }
+  className?: string
 }
