@@ -31,4 +31,6 @@ $grid-count: 12;
 
   --primary: #2560FC;
   --secondary: #FF0844;
+
+  --primary-gradient: linear-gradient(45deg, var(--secondary), var(--primary));
 }
