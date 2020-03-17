@@ -1,6 +1,10 @@
 @import url('~normalize.css/normalize.css');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body, html, #root {
   height: 100%;
 }
