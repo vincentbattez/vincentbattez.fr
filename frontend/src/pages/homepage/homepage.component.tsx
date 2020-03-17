@@ -2,8 +2,11 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks'; // @refactor: no api call in component
 
 import HOMEPAGE_QUERY from '../../services/homepage.service'
+
 import { TextSection } from './textSection/textSection.component'
 import { ImageSection } from './imageSection/imageSection.component'
+import { Hashtag } from "../../components/hashtag/hashtag.component";
+
 import './homepage.component.scss';
 
 export function Homepage() {
@@ -25,6 +28,10 @@ export function Homepage() {
       />
       <ImageSection
         image={homepage.image}
+      />
+      <Hashtag
+        label="javascript"
+        hashtagType={{name: 'frontend'}}
       />
     </section>
     );

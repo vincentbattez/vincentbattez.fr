@@ -18,6 +18,8 @@ export function Navbar() {
         <a
           href={navbar.Link.url}
           className="main-navbar__text"
+          target="_blank"
+          rel="noopener noreferrer"
         >
         <span className="main-navbar__dot mr-3" />
           <span className="link">{navbar.Link.label}</span>

@@ -1,0 +1,18 @@
+.hashtag {
+  display: inline-flex;
+  align-items: center;
+
+  &__icon {
+    fill: var(--grey);
+  }
+
+  &__name {
+    font-size: var(--font-size-p);
+    color: var(--black);
+    font-weight: 400;
+  }
+
+  &--frontend .hashtag__icon { fill: var(--secondary); }
+  &--backtend .hashtag__icon { fill: var(--primary); }
+  &--unclassified .hashtag__icon { fill: var(--primary); }
+}
