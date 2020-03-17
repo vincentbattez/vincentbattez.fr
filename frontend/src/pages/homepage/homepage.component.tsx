@@ -8,6 +8,7 @@ import { ImageSection } from './imageSection/imageSection.component'
 import { Hashtag } from "../../components/hashtag/hashtag.component";
 
 import './homepage.component.scss';
+import {HashtagCollection} from "../../components/hashtag/hashtagCollection.component";
 
 export function Homepage() {
   const { loading, error, data } = useQuery(HOMEPAGE_QUERY); // @refactor: no api call in component
@@ -29,10 +30,7 @@ export function Homepage() {
       <ImageSection
         image={homepage.image}
       />
-      <Hashtag
-        label="javascript"
-        hashtagType={{name: 'frontend'}}
-      />
+      <HashtagCollection />
     </section>
     );
 }

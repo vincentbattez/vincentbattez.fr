@@ -1,0 +1,14 @@
+.hashtag-collection {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hashtag-item {
+  &:not(:first-child) {
+    margin-left: var(--spacer-3);
+  }
+}
