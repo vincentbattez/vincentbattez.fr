@@ -1,0 +1,31 @@
+.main-navbar {
+  text-align: right;
+
+  &__container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__dot {
+    --dot-size: 11px;
+
+    display: inline-block;
+    width: var(--dot-size);
+    height: var(--dot-size);
+    border-radius: var(--dot-size);
+    background-color: var(--green);
+    box-shadow: 0 0 4px var(--green);
+  }
+
+  &__text {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      .link:after {
+        opacity: 0;
+      }
+    }
+  }
+}

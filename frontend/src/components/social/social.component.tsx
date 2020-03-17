@@ -24,7 +24,7 @@ export function Social({ className, url, image }: SocialProps) {
       <img
         className="social__image"
         src={imageUrl}
-        alt="o"
+        alt=""
       />
     </a>
   );

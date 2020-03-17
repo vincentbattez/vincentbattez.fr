@@ -6,7 +6,7 @@ import { TextSection } from './textSection/textSection.component'
 import { ImageSection } from './imageSection/imageSection.component'
 import './homepage.component.scss';
 
-export default function Homepage() {
+export function Homepage() {
   const { loading, error, data } = useQuery(HOMEPAGE_QUERY); // @refactor: no api call in component
 
   if (loading) return <p>Loading...</p>;

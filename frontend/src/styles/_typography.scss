@@ -59,7 +59,8 @@ body {
     background-image: var(--primary-gradient);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &:after {
       opacity: 0;
     }
