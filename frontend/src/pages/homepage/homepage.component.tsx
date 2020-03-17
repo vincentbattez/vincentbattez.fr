@@ -6,7 +6,7 @@ import { TextSection } from './textSection/textSection.component'
 import { ImageSection } from './imageSection/imageSection.component'
 import './homepage.component.scss';
 
-function Homepage() {
+export default function Homepage() {
   const { loading, error, data } = useQuery(HOMEPAGE_QUERY); // @refactor: no api call in component
 
   if (loading) return <p>Loading...</p>;
@@ -17,7 +17,7 @@ function Homepage() {
   return (
     <section className="page-homepage container">
       <TextSection
-        className="col-6"
+        className="col-7"
         subTitle={homepage.subTitle}
         title={homepage.title}
         description={homepage.description}
@@ -29,5 +29,3 @@ function Homepage() {
     </section>
     );
 }
-
-export default Homepage;

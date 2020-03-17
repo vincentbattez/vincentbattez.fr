@@ -1,8 +1,17 @@
 import React from 'react';
 
-import { Social } from "../../../components/social/social.component";
+import { SocialCollection } from "../../../components/social/socialCollection.component";
+import {useQuery} from "@apollo/react-hooks";
+import SOCIAL_COLLECTION_QUERY from "../../../services/social.service";
 
 export function TextSection({ className, subTitle, title, description, cv }: TextSectionProps) {
+  const { loading, error, data } = useQuery(SOCIAL_COLLECTION_QUERY); // @refactor: no api call in component
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  const socialCollection = data.socials;
+
   return (
     <div className={`${className} text-section`}>
       <h1 className="h2 mt-0 mb-3">{subTitle}</h1>
@@ -17,10 +26,8 @@ export function TextSection({ className, subTitle, title, description, cv }: Tex
       >
         {cv.label}
       </a>
-      <Social
-        className="ml-4"
-        logoSrc="http://file1.logovector.net/thumbs/49068-linkedin-logo-icon-vector-icon-vector-eps.png"
-        url="#"
+      <SocialCollection
+        socialCollection={socialCollection}
       />
     </div>
   );

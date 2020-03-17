@@ -4,7 +4,7 @@ import './imageSection.component.scss'
 
 export function ImageSection({ image }: ImageSection) {
   return (
-    <div className="image-section col-6">
+    <div className="image-section col-5">
       <img
         src={`http://localhost:1337/${image.url}`}
         alt=""
