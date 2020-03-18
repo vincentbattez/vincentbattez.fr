@@ -25,7 +25,11 @@
     height: var(--gradiant-size);
     background: radial-gradient(circle closest-side, var(--primary), transparent);
     transform: translate(-50%, -50%);
-    transition: width 200ms var(--transition-bounce), height 200ms var(--transition-bounce);
+    transition:
+      all 1000ms var(--transition-bounce),
+      height 1000ms var(--transition-bounce),
+      left 1200ms var(--transition-bounce),
+      top 1200ms var(--transition-bounce);
   }
 
   // States

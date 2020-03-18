@@ -1,9 +1,7 @@
 .main-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   text-align: right;
+  padding-bottom: 0.5rem;
 
   &__container {
     display: inline-flex;

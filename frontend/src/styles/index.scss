@@ -9,6 +9,12 @@ body, html, #root {
   height: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @import './_variables.scss';
 @import './_utils.scss';
 

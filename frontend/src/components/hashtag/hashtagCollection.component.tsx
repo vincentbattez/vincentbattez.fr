@@ -14,7 +14,7 @@ export function HashtagCollection() {
   const hashtagsCollection = data.hashtags;
 
   return (
-    <ul className="hashtag-collection col-12">
+    <ul className="hashtag-collection col-12 mb-3">
       {hashtagsCollection.map((hashtag:any) => (
         <li className="hashtag-item">
           <Hashtag
