@@ -11,13 +11,14 @@
 
   &__dot {
     --dot-size: 11px;
+    --dot-color: var(--green);
 
     display: inline-block;
     width: var(--dot-size);
     height: var(--dot-size);
     border-radius: var(--dot-size);
-    background-color: var(--green);
-    box-shadow: 0 0 4px var(--green);
+    background-color: var(--dot-color);
+    box-shadow: 0 0 4px var(--dot-color);
   }
 
   &__text {
@@ -28,6 +29,12 @@
       .link:after {
         opacity: 0;
       }
+    }
+  }
+
+  &.disabled {
+    .main-navbar__dot {
+      --dot-color: var(--grey);
     }
   }
 }

@@ -39,30 +39,37 @@ body {
   text-decoration: none;
   padding-bottom: 0.2rem;
 
-  &:after, &:before {
-    content: '';
-    display: block;
-    height: 0.2rem;
-    width: 100%;
-    position: absolute;
-    bottom: -0.2rem;
-    left: 0;
-    opacity: 1;
-    transition: opacity 300ms;
+  &.disabled {
+    pointer-events: none;
+    color: var(--grey)
   }
 
-  &:after {
-    background-color: var(--grey-lighten);
-  }
+  &:not(.disabled) {
+    &:after, &:before {
+      content: '';
+      display: block;
+      height: 0.2rem;
+      width: 100%;
+      position: absolute;
+      bottom: -0.2rem;
+      left: 0;
+      opacity: 1;
+      transition: opacity 300ms;
+    }
 
-  &:before {
-    background-image: var(--primary-gradient);
-  }
-
-  &:hover,
-  &:focus {
     &:after {
-      opacity: 0;
+      background-color: var(--grey-lighten);
+    }
+
+    &:before {
+      background-image: var(--primary-gradient);
+    }
+
+    &:hover,
+    &:focus {
+      &:after {
+        opacity: 0;
+      }
     }
   }
 }

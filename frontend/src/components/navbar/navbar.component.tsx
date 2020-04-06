@@ -11,19 +11,33 @@ export function Navbar() {
   if (error) return <p>Error :(</p>;
 
   const { navbar } = data;
+  const isAvailable = navbar.isAvailable
+  const disabledClassName = isAvailable
+    ? ''
+    : 'disabled'
+  const LinkTag = isAvailable
+    ? 'a'
+    : 'span'
+  const linkTagData = isAvailable
+    ? {
+      href:navbar.Link.url,
+      target:"_blank",
+      rel:"noopener noreferrer"
+    }
+    : ''
 
   return (
-    <nav className="main-navbar container mt-3">
+    <nav className={`main-navbar container mt-3 ${disabledClassName}`}>
       <div className="main-navbar__container col-12">
-        <a
-          href={navbar.Link.url}
+        <LinkTag
           className="main-navbar__text"
-          target="_blank"
-          rel="noopener noreferrer"
+          {...linkTagData}
         >
         <span className="main-navbar__dot mr-3" />
-          <span className="link">{navbar.Link.label}</span>
-        </a>
+          <span className={`link ${disabledClassName}`}>
+            {navbar.Link.label}
+          </span>
+        </LinkTag>
       </div>
     </nav>
   )
