@@ -6,7 +6,7 @@ export function ImageSection({ image }: ImageSection) {
   return (
     <div className="image-section col-5">
       <img
-        src={`http://localhost:1337/${image.url}`}
+        src={`${process.env.REACT_APP_BACKEND_URL}${image.url}`}
         alt=""
       />
     </div>
@@ -16,6 +16,5 @@ export function ImageSection({ image }: ImageSection) {
 type ImageSection = {
   image: {
     url: string
-
   }
 }
