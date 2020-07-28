@@ -12,12 +12,17 @@ export function TextSection({ className, subTitle, title, description, cv }: Tex
       <p className="p mt-0 mb-4 text-section__description">{description}</p>
 
       <a
-        className="link"
+        className="link external"
         href={cv.url}
         target="_blank"
         rel="noopener noreferrer"
       >
         {cv.label}
+        <img
+          className="icon icon-external-link"
+          src="/assets/icons/external-link.svg"
+          alt=""
+        />
       </a>
       <SocialCollection
         socialCollection={socialCollectionData}

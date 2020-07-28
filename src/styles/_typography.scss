@@ -73,3 +73,16 @@ body {
     }
   }
 }
+
+
+[target="_blank"] {
+  margin-right: 12px;
+
+  .icon-external-link {
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 8px;
+    height: 8px;
+  }
+}

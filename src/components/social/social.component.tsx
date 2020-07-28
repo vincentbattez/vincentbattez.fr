@@ -11,8 +11,6 @@ export function Social({ className, url, image }: SocialProps) {
     e.target.style.setProperty('--y', `${ y }px`);
   }
 
-  const imageUrl = `${process.env.REACT_APP_BACKEND_URL}${image.url}`;
-
   return (
     <a
       href={url}
@@ -23,7 +21,7 @@ export function Social({ className, url, image }: SocialProps) {
     >
       <img
         className="social__image"
-        src={imageUrl}
+        src={image.url}
         alt=""
       />
     </a>

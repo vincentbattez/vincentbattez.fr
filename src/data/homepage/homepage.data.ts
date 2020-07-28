@@ -1,12 +1,12 @@
 export const homepageData = {
-  subTitle: 'subTitle',
-  title: 'title',
-  description: 'description',
+  subTitle: 'Porfolio Développeur Front-End Confirmé',
+  title: 'Développeur Front-End Confirmé',
+  description: 'Je suis à la recherche d’un emploi en tant que développeur Front-End au Canada.',
   image: {
-    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png'
+    url: '/assets/face-vector.svg'
   },
   cv: {
-    label: 'label',
-    url: 'www.google.fr',
+    label: 'Voir mon CV',
+    url: 'https://drive.google.com/file/d/0B_qtZh6a-s4cVTFkMU42bU9LTU0/view',
   },
 }

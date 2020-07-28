@@ -29,6 +29,11 @@ export function Navbar() {
         <span className="main-navbar__dot mr-3" />
           <span className={`link ${disabledClassName}`}>
             {navbarData.link.label}
+            <img
+              className="icon icon-external-link"
+              src="/assets/icons/external-link.svg"
+              alt=""
+            />
           </span>
         </LinkTag>
       </div>

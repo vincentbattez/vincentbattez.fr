@@ -1,7 +1,7 @@
 export const navbarData = {
   link: {
-    label: 'label',
-    url: 'http://.google.fr',
+    label: 'Disponible pour mission freelance',
+    url: 'https://www.linkedin.com/in/vincentbattez/',
   },
   isAvailable: true
 }

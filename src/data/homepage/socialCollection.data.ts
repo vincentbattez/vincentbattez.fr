@@ -1,8 +1,8 @@
 export const socialCollectionData = [
   {
-    url: 'https://via.placeholder.com/30',
+    url: 'https://www.linkedin.com/in/vincentbattez/',
     image: {
-      url: 'https://via.placeholder.com/30',
+      url: '/assets/icons/linkedin.svg',
     },
   }
 ]

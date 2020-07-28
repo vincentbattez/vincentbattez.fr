@@ -6,8 +6,8 @@ export function ImageSection({ image }: ImageSection) {
   return (
     <div className="image-section col-5">
       <img
-        src={`${process.env.REACT_APP_BACKEND_URL}${image.url}`}
-        alt=""
+        src={image.url}
+        alt="Vincent Battez vectoriel"
       />
     </div>
   )
