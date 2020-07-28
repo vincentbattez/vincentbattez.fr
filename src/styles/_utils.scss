@@ -26,10 +26,38 @@
   column-gap: 2rem;
   padding-left: 8rem;
   padding-right: 8rem;
+
+  @media (max-width: 1024px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @for $i from 1 through $grid-count {
   .col-#{$i} {
     grid-column: span $i;
+  }
+
+  @media (max-width: 1024px) {
+    .col-md-#{$i} {
+      grid-column: span $i !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .col-sm-#{$i} {
+      grid-column: span $i !important;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .col-xs-#{$i} {
+      grid-column: span $i !important;
+    }
   }
 }

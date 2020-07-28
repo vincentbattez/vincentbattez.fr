@@ -30,6 +30,12 @@
         opacity: 0;
       }
     }
+
+    @media (max-width: 680px) {
+      .link {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   &.disabled {

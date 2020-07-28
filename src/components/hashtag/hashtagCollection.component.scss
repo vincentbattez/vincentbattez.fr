@@ -5,6 +5,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  line-height: 40px;
+
+
+  @media (max-width: 680px) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    line-height: 60px;
+    justify-content: flex-start;
+  }
 }
 
 .hashtag-item {

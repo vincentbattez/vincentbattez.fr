@@ -3,6 +3,11 @@
   text-align: center;
 
   img {
-    width: 31rem;
+    width: 100%;
+    max-width: 31rem;
+
+    @media (max-width: 680px) {
+      display: none;
+    }
   }
 }

@@ -1,4 +1,8 @@
 .text-section {
+  @media (max-width: 1024px) {
+    grid-column: span 6;
+  }
+
   &__description {
     max-width: 420px;
   }
