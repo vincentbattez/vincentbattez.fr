@@ -8,7 +8,7 @@ export function HashtagCollection() {
   return (
     <ul className="hashtag-collection col-12 mb-3">
       {hashtagCollectionData.map((hashtag:any) => (
-        <li className="hashtag-item">
+        <li key={hashtag.position} className="hashtag-item">
           <Hashtag
             label={hashtag.label}
             hashtagType={hashtag.hashtag_type}

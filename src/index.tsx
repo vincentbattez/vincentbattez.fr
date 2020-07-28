@@ -10,13 +10,13 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
-  <div>
+  <React.Fragment>
     <Navbar />
     <Homepage />
     <div className="container">
       <HashtagCollection />
     </div>
-  </div>,
+  </React.Fragment>,
   document.getElementById("root")
 );
 

@@ -27,14 +27,14 @@ export function Navbar() {
           {...linkTagData}
         >
         <span className="main-navbar__dot mr-3" />
-          <span className={`link ${disabledClassName}`}>
+          <h3 className={`link ${disabledClassName}`}>
             {navbarData.link.label}
             <img
               className="icon icon-external-link"
               src="/assets/icons/external-link.svg"
               alt=""
             />
-          </span>
+          </h3>
         </LinkTag>
       </div>
     </nav>

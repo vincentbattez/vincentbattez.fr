@@ -38,6 +38,9 @@ body {
   color: var(--black);
   text-decoration: none;
   padding-bottom: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+  display: inline-block;
 
   &.disabled {
     pointer-events: none;

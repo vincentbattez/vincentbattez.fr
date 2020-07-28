@@ -28,22 +28,29 @@ export const hashtagCollectionData = [
     }
   },
   {
-    label: 'user-centric',
+    label: 'seo',
     position: 5,
     hashtag_type: {
       name: 'frontend',
     }
   },
   {
-    label: 'freelance',
+    label: 'user-centric',
     position: 6,
+    hashtag_type: {
+      name: 'frontend',
+    }
+  },
+  {
+    label: 'freelance',
+    position: 7,
     hashtag_type: {
       name: 'backend',
     }
   },
   {
     label: 'nodeJS',
-    position: 7,
+    position: 8,
     hashtag_type: {
       name: 'backend',
     }
