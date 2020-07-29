@@ -7,7 +7,9 @@ import { HashtagCollection } from "./components/hashtag/hashtagCollection.compon
 
 import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
+import { GoogleAnalytics } from "./services/google/analytics";
 
+window.$googleAnalytics = new GoogleAnalytics()
 
 ReactDOM.render(
   <React.Fragment>

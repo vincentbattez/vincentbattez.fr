@@ -10,6 +10,7 @@
     font-size: var(--font-size-p);
     color: var(--black);
     font-weight: 400;
+    white-space: nowrap;
   }
 
   &--frontend .hashtag__icon { fill: var(--secondary); }

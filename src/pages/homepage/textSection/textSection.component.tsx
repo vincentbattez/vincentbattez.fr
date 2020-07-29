@@ -5,6 +5,13 @@ import './textSection.component.scss'
 import { socialCollectionData } from "../../../data/homepage/socialCollection.data";
 
 export function TextSection({ className, subTitle, title, description, cv }: TextSectionProps) {
+  function clickCTA(): void {
+    window.$googleAnalytics.event({
+      category: 'CTA',
+      action: 'CV',
+    });
+  }
+
   return (
     <div className={`${className} text-section`}>
       <h1 className="h2 mt-0 mb-3">{subTitle}</h1>
@@ -16,6 +23,7 @@ export function TextSection({ className, subTitle, title, description, cv }: Tex
         href={cv.url}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={clickCTA}
       >
         {cv.label}
         <img
