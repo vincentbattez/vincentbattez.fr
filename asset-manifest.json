@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/vincentbattez/static/css/main.29ff435c.chunk.css",
-    "main.js": "/vincentbattez/static/js/main.2c5b3947.chunk.js",
-    "main.js.map": "/vincentbattez/static/js/main.2c5b3947.chunk.js.map",
+    "main.css": "/vincentbattez/static/css/main.100e0d69.chunk.css",
+    "main.js": "/vincentbattez/static/js/main.c6b3a102.chunk.js",
+    "main.js.map": "/vincentbattez/static/js/main.c6b3a102.chunk.js.map",
     "runtime-main.js": "/vincentbattez/static/js/runtime-main.7f03464e.js",
     "runtime-main.js.map": "/vincentbattez/static/js/runtime-main.7f03464e.js.map",
     "static/css/2.8ff17cee.chunk.css": "/vincentbattez/static/css/2.8ff17cee.chunk.css",
-    "static/js/2.0daa3e27.chunk.js": "/vincentbattez/static/js/2.0daa3e27.chunk.js",
-    "static/js/2.0daa3e27.chunk.js.map": "/vincentbattez/static/js/2.0daa3e27.chunk.js.map",
+    "static/js/2.cdcabe3e.chunk.js": "/vincentbattez/static/js/2.cdcabe3e.chunk.js",
+    "static/js/2.cdcabe3e.chunk.js.map": "/vincentbattez/static/js/2.cdcabe3e.chunk.js.map",
     "index.html": "/vincentbattez/index.html",
-    "precache-manifest.17e62233dc48cb83d18317f0683da9c5.js": "/vincentbattez/precache-manifest.17e62233dc48cb83d18317f0683da9c5.js",
+    "precache-manifest.e59eef2393cd41ad0e47e9b1cbf9194f.js": "/vincentbattez/precache-manifest.e59eef2393cd41ad0e47e9b1cbf9194f.js",
     "service-worker.js": "/vincentbattez/service-worker.js",
     "static/css/2.8ff17cee.chunk.css.map": "/vincentbattez/static/css/2.8ff17cee.chunk.css.map",
-    "static/css/main.29ff435c.chunk.css.map": "/vincentbattez/static/css/main.29ff435c.chunk.css.map",
-    "static/js/2.0daa3e27.chunk.js.LICENSE.txt": "/vincentbattez/static/js/2.0daa3e27.chunk.js.LICENSE.txt"
+    "static/css/main.100e0d69.chunk.css.map": "/vincentbattez/static/css/main.100e0d69.chunk.css.map",
+    "static/js/2.cdcabe3e.chunk.js.LICENSE.txt": "/vincentbattez/static/js/2.cdcabe3e.chunk.js.LICENSE.txt",
+    "static/media/external-link.svg": "/vincentbattez/static/media/external-link.cee61498.svg",
+    "static/media/face-vector.svg": "/vincentbattez/static/media/face-vector.a52184bf.svg",
+    "static/media/linkedin.svg": "/vincentbattez/static/media/linkedin.5719e0c6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7f03464e.js",
     "static/css/2.8ff17cee.chunk.css",
-    "static/js/2.0daa3e27.chunk.js",
-    "static/css/main.29ff435c.chunk.css",
-    "static/js/main.2c5b3947.chunk.js"
+    "static/js/2.cdcabe3e.chunk.js",
+    "static/css/main.100e0d69.chunk.css",
+    "static/js/main.c6b3a102.chunk.js"
   ]
 }
