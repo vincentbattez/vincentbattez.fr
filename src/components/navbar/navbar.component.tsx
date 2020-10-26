@@ -1,6 +1,8 @@
 import React from 'react'
 
 import './navbar.component.scss'
+
+import externalLink from '../../assets/icons/external-link.svg'
 import {navbarData} from "../../data/homepage/navbar.data";
 
 
@@ -40,7 +42,7 @@ export function Navbar() {
             {navbarData.link.label}
             <img
               className="icon icon-external-link"
-              src="/assets/icons/external-link.svg"
+              src={externalLink}
               alt=""
             />
           </h3>

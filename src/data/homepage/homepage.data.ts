@@ -3,7 +3,7 @@ export const homepageData = {
   title: 'Développeur Front-End Confirmé',
   description: 'Je suis à la recherche d’un emploi en tant que développeur Front-End au Canada.',
   image: {
-    url: '/assets/face-vector.svg'
+    url: require('../../assets/face-vector.svg')
   },
   cv: {
     label: 'Voir mon CV',

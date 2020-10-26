@@ -7,7 +7,7 @@ export function ImageSection({ image }: ImageSection) {
     <div className="image-section col-5">
       <img
         src={image.url}
-        alt="Vincent Battez vectoriel"
+        alt=""
       />
     </div>
   )
