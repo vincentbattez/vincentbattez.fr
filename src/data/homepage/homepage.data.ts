@@ -1,7 +1,7 @@
 export const homepageData = {
   subTitle: 'Porfolio Développeur Front-End Confirmé',
-  title: 'Développeur Front-End Confirmé',
-  description: 'Je suis à la recherche d’un emploi en tant que développeur Front-End au Canada.',
+  title: 'Développeur Front-End Confirmé affinité UX/UI',
+  description: 'Disponible pour un mandat à Montréal.',
   image: {
     url: require('../../assets/face-vector.svg')
   },

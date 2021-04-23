@@ -14,43 +14,50 @@ export const hashtagCollectionData = [
     }
   },
   {
-    label: 'react',
+    label: 'angular 10',
     position: 3,
     hashtag_type: {
       name: 'frontend',
     }
   },
   {
-    label: 'accessibilité',
+    label: 'react',
     position: 4,
     hashtag_type: {
       name: 'frontend',
     }
   },
   {
-    label: 'seo',
+    label: 'accessibilité',
     position: 5,
     hashtag_type: {
       name: 'frontend',
     }
   },
   {
-    label: 'user-centric',
+    label: 'seo',
     position: 6,
     hashtag_type: {
       name: 'frontend',
     }
   },
   {
-    label: 'freelance',
+    label: 'user-centric',
     position: 7,
+    hashtag_type: {
+      name: 'frontend',
+    }
+  },
+  {
+    label: 'freelance',
+    position: 8,
     hashtag_type: {
       name: 'backend',
     }
   },
   {
     label: 'nodeJS',
-    position: 8,
+    position: 9,
     hashtag_type: {
       name: 'backend',
     }
