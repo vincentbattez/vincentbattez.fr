@@ -14,8 +14,8 @@ export function TextSection({ className, subTitle, title, description, cv }: Tex
 
   return (
     <div className={`${className} text-section`}>
-      <h1 className="h2 mt-0 mb-3">{subTitle}</h1>
-      <h2 className="h1 mt-0 mb-2">{title}</h2>
+      <h1 className="h2 mt-0 mb-3 text-section__subtitle">{subTitle}</h1>
+      <h2 className="h1 mt-0 mb-2 text-section__title">{title}</h2>
       <p className="p mt-0 mb-4 text-section__description">{description}</p>
 
       <a
